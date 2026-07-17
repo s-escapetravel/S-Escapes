@@ -10,7 +10,7 @@
     "build:cms": "tinacms build",
     "verify": "npm run build:site && node --check netlify/functions/leads.mjs && node --check netlify/functions/reviews.mjs && node --check netlify/functions/lib/shared.mjs",
     "preview": "vite preview",
-    "dev:netlify": "npx netlify dev"
+    "dev:netlify": "npx netlify-cli dev"
   },
   "devDependencies": {
     "@netlify/functions": "^3.1.10",

@@ -58,4 +58,4 @@ Do not transfer a repository while a review submission is being processed. Wait 
 4. Reject another review and confirm it does not appear publicly.
 5. Delete test content from Tina and remove test e-mails from the inbox according to the client’s retention policy.
 
-For local work, copy `.env.example` to `.env`, fill only development values, run `npm install`, then `npm run dev`. `npm run build` skips Tina locally when credentials are absent, but Netlify production builds fail clearly until Tina credentials are present.
+For local work, copy `.env.example` to `.env`, fill only development values, run `npm install`, then `npm run dev`. Run `npm run dev:netlify` when local testing needs the Netlify Functions; it downloads the Netlify CLI on demand. `npm run build` skips Tina locally when credentials are absent, but Netlify production builds fail clearly until Tina credentials are present.
