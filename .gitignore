@@ -4,6 +4,7 @@
 .claude/
 node_modules/
 dist/
+public/admin/
 tina/__generated__/
 firebase-debug*.log
 firebase.json
