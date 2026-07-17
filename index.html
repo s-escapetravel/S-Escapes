@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="S Escapes imagine vos voyages sur mesure et propose des séjours prêts à partir, de la Méditerranée à la Laponie." />
+    <meta name="theme-color" content="#f5eedd" />
+    <meta property="og:title" content="S Escapes — Le monde, à votre manière" />
+    <meta property="og:description" content="Voyages pensés, séjours personnalisés et accompagnement de chaque instant." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/images/hero-travel.jpg" />
+    <link rel="canonical" href="https://s-escapes.fr/" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TravelAgency","name":"S Escapes","url":"https://s-escapes.fr/","email":"escapes.travelplanner@gmail.com","telephone":"+33634693243","description":"Travel planner indépendant pour voyages sur mesure, départs choisis et Hajj & Omra."}</script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%23f5eedd%22/><text x=%2250%22 y=%2270%22 text-anchor=%22middle%22 font-size=%2260%22 fill=%22%231f4a31%22 font-family=%22Georgia%22>S</text></svg>" />
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600&f[]=switzer@300,400,500,600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,300..500&family=Caveat:wght@500;600;700&display=swap" />
+    <link rel="stylesheet" href="/src/travel.css" />
+    <title>S Escapes — Travel Planner</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="topbar" data-header>
+      <a class="wordmark" href="#haut" aria-label="S Escapes, accueil">S&nbsp;Escapes<sup>®</sup></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+        <span></span><span></span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+        <a href="#departs">Nos voyages</a>
+        <a href="#atelier">Comment ça marche</a>
+        <a class="nav-sacred" href="/hajj-omra.html">Hajj &amp; Omra</a>
+        <a href="#maison">Notre approche</a>
+        <a class="pill pill--solid" href="#contact">Écrivez-nous</a>
+      </nav>
+    </header>
+
+    <main id="contenu">
+      <div class="route-thread" aria-hidden="true"><span></span></div>
+      <section class="cover" id="haut">
+        <picture class="cover-photo" aria-hidden="true">
+          <source srcset="/images/hero-travel-mobile.webp 688w, /images/hero-travel.webp 1376w" sizes="100vw" type="image/webp" />
+          <img src="/images/hero-travel.jpg" alt="" fetchpriority="high" sizes="100vw" width="1376" height="768" />
+        </picture>
+        <div class="cover-inner">
+          <h1>
+            <span class="line">Le monde,</span>
+            <span class="line line--accent">à votre manière.</span>
+          </h1>
+          <p class="cover-sub">Séjours prêts à partir, itinéraires dessinés pour vous, Hajj &amp; Omra préparés avec soin. Vous rêvez, nous orchestrons.</p>
+          <div class="cover-actions">
+            <a class="pill pill--solid" href="#departs">Voir les départs</a>
+            <a class="pill" href="#atelier">Imaginer mon voyage</a>
+            <span class="cover-note hand">On s’occupe de tout, vous profitez&nbsp;!</span>
+          </div>
+        </div>
+        <div class="cover-polaroids" aria-hidden="true">
+          <figure class="polaroid" data-tilt><img src="/images/dest-corse.jpg" alt="" loading="lazy" /><figcaption>Road trip en Corse ♡</figcaption></figure>
+          <figure class="polaroid" data-tilt><img src="/images/dest-bali.jpg" alt="" loading="lazy" /><figcaption>Le paradis à prix doux ♡</figcaption></figure>
+        </div>
+        <div class="stamp" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="58" />
+            <defs><path id="stamp-arc" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" /></defs>
+            <text><textPath href="#stamp-arc">Déjà fait &amp; approuvé · S Escapes ·</textPath></text>
+          </svg>
+          <span class="stamp-core">✈</span>
+        </div>
+        <div class="cover-strip" aria-hidden="true">
+          <span>Au départ de vos envies</span>
+          <span class="strip-route"><b></b></span>
+          <span>Prochaine escale : la vôtre</span>
+        </div>
+      </section>
+
+      <section class="manifest" id="departs">
+        <header class="sect-head reveal">
+          <p class="sect-label"><i>01</i>Index des départs</p>
+          <h2>Neuf échappées,<br />prêtes à <em>embarquer</em>.</h2>
+          <div class="filters" role="group" aria-label="Filtrer les destinations">
+            <button class="is-active" type="button" data-filter="all">Toutes</button>
+            <button type="button" data-filter="soleil">Soleil</button>
+            <button type="button" data-filter="culture">Culture</button>
+            <button type="button" data-filter="nature">Nature</button>
+          </div>
+        </header>
+        <div class="board reveal" data-board>
+          <!-- visual destination atlas injected from trip-data.js -->
+        </div>
+        <p class="board-note reveal">Budgets indicatifs établis d’après les dernières brochures — chaque projet est affiné avant réservation.</p>
+      </section>
+
+      <section class="atelier" id="atelier">
+        <div class="atelier-copy reveal">
+          <p class="sect-label"><i>02</i>L’atelier sur mesure</p>
+          <h2>Un itinéraire qui<br />n’existe pas <em>encore</em>.</h2>
+          <p class="lede">Envies, tempo, budget : dites-nous tout. Nous dessinons un voyage unique, du premier café au vol du retour.</p>
+          <button class="pill pill--solid" type="button" data-open-planner>Commencer mon projet</button>
+          <span class="hand hand--gold">Trois réponses, et on décolle&nbsp;!</span>
+        </div>
+        <ol class="atelier-steps reveal" aria-label="Notre accompagnement">
+          <li><span>01</span><div><strong>Échange</strong><small>Vos envies, vos inspirations, votre rythme.</small></div></li>
+          <li><span>02</span><div><strong>Recherche</strong><small>Les meilleures options, comparées pour vous.</small></div></li>
+          <li><span>03</span><div><strong>Proposition</strong><small>Un itinéraire dessiné sur mesure.</small></div></li>
+          <li><span>04</span><div><strong>Réservation</strong><small>Chaque détail coordonné et confirmé.</small></div></li>
+          <li><span>05</span><div><strong>Départ</strong><small>Vous partez l’esprit libre, nous restons joignables.</small></div></li>
+        </ol>
+      </section>
+
+      <section class="sacred" aria-labelledby="sacred-title">
+        <figure class="sacred-photo reveal" aria-hidden="true"><img src="/images/hajj-mosque-dusk.jpg" alt="" loading="lazy" /></figure>
+        <div class="sacred-copy reveal">
+          <p class="sect-label"><i>03</i>Hajj &amp; Omra</p>
+          <h2 id="sacred-title">Un voyage sacré,<br /><em>préparé avec soin</em>.</h2>
+          <p class="lede">Formalités, vols, hébergements, rites : chaque étape est anticipée pour vous laisser vivre l’essentiel.</p>
+          <a class="pill" href="/hajj-omra.html">Découvrir l’accompagnement</a>
+        </div>
+      </section>
+
+      <section class="maison" id="maison">
+        <div class="maison-copy reveal">
+          <p class="sect-label"><i>04</i>La maison</p>
+          <h2>Vous profitez.<br />Nous <em>orchestrons</em>.</h2>
+          <p class="lede">Une approche humaine et indépendante pour voyager sans passer vos soirées à comparer, réserver et tout vérifier. Chaque adresse, chaque transfert, chaque expérience est choisie pour former un voyage cohérent.</p>
+          <ul class="maison-list">
+            <li>Une interlocutrice unique, du premier échange au retour</li>
+            <li>Un itinéraire construit pour vous, jamais recopié</li>
+            <li>Une assistance avant, pendant et après le voyage</li>
+          </ul>
+        </div>
+        <figure class="maison-photo polaroid reveal" data-tilt><img src="/images/dest-senegal.jpg" alt="Pirogues colorées sur une plage du Sénégal" loading="lazy" /><figcaption>La Teranga, Sénégal ♡</figcaption></figure>
+      </section>
+
+      <section class="proof" aria-labelledby="proof-title">
+        <div class="proof-intro reveal">
+          <p class="sect-label"><i>05</i>Pourquoi S Escapes</p>
+          <h2 id="proof-title">Bien voyager, c’est<br />se sentir <em>accompagné</em>.</h2>
+        </div>
+        <ol class="proof-list reveal">
+          <li><span>01</span><div><h3>Une interlocutrice dédiée</h3><p>Un échange qui reste humain, du premier message au retour.</p></div></li>
+          <li><span>02</span><div><h3>Un itinéraire pensé pour vous</h3><p>Des choix reliés entre eux, plutôt qu’une succession de réservations.</p></div></li>
+          <li><span>03</span><div><h3>À vos côtés, avant, pendant et après</h3><p>Une présence pour anticiper, ajuster et vous laisser profiter.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="carnets" aria-labelledby="carnets-title">
+        <header class="carnets-head reveal">
+          <p class="sect-label"><i>06</i>Carnets récents</p>
+          <h2 id="carnets-title">Des histoires à garder<br />près de <em>vous</em>.</h2>
+          <p class="lede">Quelques fragments de destinations, d’adresses et de moments bien choisis.</p>
+        </header>
+        <div class="story-rail reveal" data-stories></div>
+      </section>
+
+      <section class="advisor" aria-labelledby="advisor-title">
+        <div class="advisor-note reveal" data-advisor>
+          <p class="sect-label"></p>
+          <h2 id="advisor-title"></h2>
+          <p class="advisor-role"></p>
+          <blockquote></blockquote>
+        </div>
+        <aside class="testimonial reveal" data-testimonial aria-label="Témoignage voyageur"></aside>
+        <div class="review-invite reveal">
+          <p class="sect-label">Vous êtes parti(e) avec nous&nbsp;?</p>
+          <h3>Votre souvenir peut inspirer le prochain voyage.</h3>
+          <p>Partagez votre expérience en quelques instants. Votre avis est relu par notre équipe avant toute publication.</p>
+          <button class="text-link review-invite__cta" type="button" data-open-review>Partager mon expérience <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" /></svg></button>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-copy reveal">
+          <p class="sect-label"><i>07</i>Contact</p>
+          <h2>La prochaine histoire<br />commence <em>ici</em>.</h2>
+          <p class="lede">Racontez-nous ce que vous avez en tête. Nous revenons vers vous pour transformer l’idée en itinéraire.</p>
+          <p class="response-promise" data-response-promise hidden></p>
+          <div class="contact-direct">
+            <a href="tel:+33634693243">06 34 69 32 43</a>
+            <a href="mailto:escapes.travelplanner@gmail.com">escapes.travelplanner@gmail.com</a>
+            <a href="https://www.instagram.com/bys_escapes/" target="_blank" rel="noreferrer">Instagram — @bys_escapes</a>
+          </div>
+          <span class="hand">Partout dans le monde, depuis chez vous ♡</span>
+        </div>
+        <form class="contact-form reveal" data-contact-form>
+          <label>Nom et prénom<input name="name" autocomplete="name" required /></label>
+          <label>E-mail<input name="email" type="email" autocomplete="email" required /></label>
+          <label>Téléphone<input name="phone" type="tel" autocomplete="tel" /></label>
+          <label>Votre projet<select name="project" required><option value="">Choisir</option><option>Voyage prêt à partir</option><option>Voyage sur mesure</option><option>Hajj ou Omra</option></select></label>
+          <label class="field-wide">Parlez-nous de vos envies<textarea name="message" rows="4" required></textarea></label>
+          <label class="consent field-wide"><input name="consent" type="checkbox" required /> J’accepte d’être recontacté(e) au sujet de mon projet et la <a href="/confidentialite.html">Politique de confidentialité</a>.</label>
+          <button class="pill pill--solid" type="submit">Envoyer ma demande</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+        <section class="form-success" data-form-success hidden aria-live="polite">
+          <p class="sect-label">Demande bien reçue</p>
+          <h3>Merci pour votre confiance.</h3>
+          <p>Votre projet est arrivé auprès de notre équipe. <span data-response-time></span></p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="deck">
+      <p class="deck-mark" aria-hidden="true">S&nbsp;Escapes</p>
+      <div class="deck-grid">
+        <p>Voyages prêts à partir, sur mesure,<br />Hajj &amp; Omra.</p>
+        <nav aria-label="Liens de pied de page">
+          <a href="#departs">Départs</a>
+          <a href="#atelier">Sur mesure</a>
+          <a href="/hajj-omra.html">Hajj &amp; Omra</a>
+          <a href="#contact">Contact</a>
+          <a href="/confidentialite.html">Confidentialité</a>
+        </nav>
+        <div>
+          <a href="tel:+33634693243">06 34 69 32 43</a>
+          <a href="mailto:escapes.travelplanner@gmail.com">E-mail</a>
+          <a href="https://www.instagram.com/bys_escapes/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </div>
+      <small>© <span data-year></span> S Escapes — Travel planner indépendant. Tous droits réservés.</small>
+    </footer>
+
+    <dialog class="modal planner-modal" data-planner-modal aria-labelledby="planner-title">
+      <button class="modal-close" type="button" data-close-modal aria-label="Fermer">×</button>
+      <div class="planner-layout">
+        <form data-planner-form novalidate>
+          <div class="planner-progress" aria-label="Progression"><span data-planner-progress>Étape 1 sur 3</span><i><b></b></i></div>
+          <fieldset data-step="1">
+            <legend id="planner-title">Quel voyage vous ressemble&nbsp;?</legend>
+            <p class="planner-intro">Choisissez une ambiance. Vous pourrez préciser votre idée juste après.</p>
+            <div class="planner-choices">
+              <label class="planner-choice"><input type="radio" name="inspiration" value="Mer & soleil" required /><span><b>Mer &amp; soleil</b><small>Ralentir, nager, respirer.</small></span></label>
+              <label class="planner-choice"><input type="radio" name="inspiration" value="Nature & aventure" /><span><b>Nature &amp; aventure</b><small>Marcher, explorer, s’émerveiller.</small></span></label>
+              <label class="planner-choice"><input type="radio" name="inspiration" value="Culture & art de vivre" /><span><b>Culture &amp; art de vivre</b><small>Flâner, goûter, rencontrer.</small></span></label>
+              <label class="planner-choice"><input type="radio" name="inspiration" value="Je me laisse guider" /><span><b>Je me laisse guider</b><small>Une surprise bien pensée.</small></span></label>
+            </div>
+            <label class="planner-field">Une destination en tête&nbsp;?<input name="destination" autocomplete="off" placeholder="Ex. Japon, Italie… ou “à découvrir”" /></label>
+            <label class="planner-field">Un lien d’inspiration&nbsp;?<input name="inspirationUrl" type="url" inputmode="url" placeholder="Pinterest, Instagram, article…" /></label>
+          </fieldset>
+          <fieldset data-step="2" hidden>
+            <legend>Les contours du voyage</legend>
+            <p class="planner-intro">Quelques repères pour que notre première réponse soit déjà pertinente.</p>
+            <div class="planner-grid">
+              <label class="planner-field">Ville de départ<input name="departureCity" autocomplete="address-level2" placeholder="Ex. Paris, Lyon…" required /></label>
+              <label class="planner-field">Quand aimeriez-vous partir&nbsp;?<input name="dates" autocomplete="off" placeholder="Ex. printemps 2027" required /></label>
+              <label class="planner-field">Durée souhaitée<select name="duration" required><option value="">Choisir</option><option>Week-end prolongé</option><option>5 à 7 jours</option><option>8 à 12 jours</option><option>Deux semaines ou plus</option><option>Je suis flexible</option></select></label>
+              <label class="planner-field">Budget par personne<select name="budget" required><option value="">Choisir</option><option>Moins de 1 000 €</option><option>1 000 à 1 800 €</option><option>1 800 à 3 000 €</option><option>3 000 à 5 000 €</option><option>5 000 € et plus</option><option>À définir ensemble</option></select></label>
+              <label class="planner-field">Adultes<input name="adults" type="number" min="1" max="20" value="2" required /></label>
+              <label class="planner-field">Enfants<input name="children" type="number" min="0" max="10" value="0" /></label>
+            </div>
+            <p class="planner-question">Quel rythme vous fait envie&nbsp;?</p>
+            <div class="planner-pace">
+              <input id="pace-slow" type="radio" name="pace" value="Lent & contemplatif" required /><label for="pace-slow"><span>Lent &amp; contemplatif</span></label>
+              <input id="pace-balanced" type="radio" name="pace" value="Équilibré" /><label for="pace-balanced"><span>Équilibré</span></label>
+              <input id="pace-curious" type="radio" name="pace" value="Dense & curieux" /><label for="pace-curious"><span>Dense &amp; curieux</span></label>
+            </div>
+          </fieldset>
+          <fieldset data-step="3" hidden>
+            <legend>À qui écrivons-nous&nbsp;?</legend>
+            <p class="planner-intro">Votre carnet est prêt. Ajoutez vos coordonnées et toute information qui compte pour vous.</p>
+            <div class="planner-grid">
+              <label class="planner-field">Nom et prénom<input name="name" autocomplete="name" required /></label>
+              <label class="planner-field">E-mail<input name="email" type="email" autocomplete="email" required /></label>
+              <label class="planner-field">Téléphone<input name="phone" type="tel" autocomplete="tel" required /></label>
+              <label class="planner-field">Préférence de contact<select name="contactPreference" required><option value="">Choisir</option><option>E-mail</option><option>Appel téléphonique</option><option>WhatsApp</option></select></label>
+              <label class="planner-field">Créneau préféré<select name="contactTime" required><option value="">Choisir</option><option>Le matin</option><option>L’après-midi</option><option>En soirée</option><option>Selon vos disponibilités</option></select></label>
+            </div>
+            <label class="planner-field planner-message">Le détail qui fera la différence<textarea name="notes" rows="4" placeholder="Occasion particulière, hôtel rêvé, contraintes, envies à ne pas manquer…"></textarea></label>
+            <label class="consent planner-consent"><input type="checkbox" name="consent" required /> J’accepte d’être recontacté(e) au sujet de ce projet et la <a href="/confidentialite.html">Politique de confidentialité</a>.</label>
+          </fieldset>
+          <div class="planner-nav">
+            <button class="pill" type="button" data-planner-back hidden>← Retour</button>
+            <button class="pill pill--solid" type="button" data-planner-next>Continuer →</button>
+            <button class="pill pill--solid" type="submit" data-planner-submit hidden>Envoyer mon carnet →</button>
+          </div>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+        <section class="form-success form-success--planner" data-form-success hidden aria-live="polite">
+          <p class="sect-label">Carnet bien reçu</p>
+          <h2>Votre voyage commence ici.</h2>
+          <p>Merci. Votre brief est entre les mains de notre équipe. <span data-response-time></span></p>
+          <button class="pill pill--solid" type="button" data-close-modal>Fermer</button>
+        </section>
+        <aside class="planner-side" aria-live="polite">
+          <p class="sect-label">Votre carnet</p>
+          <h2>Le point de départ<br />d’un voyage <em>à vous</em>.</h2>
+          <dl class="planner-summary">
+            <div><dt>Inspiration</dt><dd data-summary="inspiration">À imaginer</dd></div>
+            <div><dt>Destination</dt><dd data-summary="destination">À découvrir</dd></div>
+            <div><dt>Départ</dt><dd data-summary="dates">À définir</dd></div>
+            <div><dt>Voyageurs</dt><dd data-summary="travelers">2 adultes</dd></div>
+            <div><dt>Rythme</dt><dd data-summary="pace">À votre mesure</dd></div>
+            <div><dt>Budget</dt><dd data-summary="budget">À définir</dd></div>
+          </dl>
+          <p class="planner-side-note">Un brief structuré est préparé pour notre équipe, ainsi qu’un message de confirmation pour vous.</p>
+        </aside>
+      </div>
+    </dialog>
+
+    <dialog class="modal review-modal" data-review-modal aria-labelledby="review-title">
+      <button class="modal-close" type="button" data-close-modal aria-label="Fermer">×</button>
+      <div class="review-layout">
+        <section class="review-intro">
+          <p class="sect-label">Après le voyage</p>
+          <h2>Racontez-nous<br />ce qui vous a <em>marqué</em>.</h2>
+          <p>Votre retour aide notre équipe à rester attentive à chaque détail. Les avis ne sont publiés qu’après validation.</p>
+          <ul>
+            <li>Votre e-mail reste privé.</li>
+            <li>Ajoutez jusqu’à trois souvenirs en photo.</li>
+            <li>Vous gardez le dernier mot sur leur publication.</li>
+          </ul>
+        </section>
+        <form class="review-form" data-review-form novalidate>
+          <p class="form-kicker">Votre avis</p>
+          <label>Nom ou prénom à afficher<input name="name" autocomplete="name" maxlength="80" required /></label>
+          <label>E-mail <small>Privé — pour vérifier votre retour.</small><input name="email" type="email" autocomplete="email" maxlength="160" required /></label>
+          <label>Votre voyage<select name="trip" required><option value="">Choisir</option><option>Voyage sur mesure</option><option>Voyage prêt à partir</option><option>Hajj ou Omra</option><option>Autre expérience S Escapes</option></select></label>
+          <fieldset class="rating-fieldset">
+            <legend>Votre expérience</legend>
+            <div class="rating-options">
+              <label><input type="radio" name="rating" value="5" required /><span>5<small>Inoubliable</small></span></label>
+              <label><input type="radio" name="rating" value="4" /><span>4<small>Très belle</small></span></label>
+              <label><input type="radio" name="rating" value="3" /><span>3<small>Bonne</small></span></label>
+            </div>
+          </fieldset>
+          <label>Votre souvenir<textarea name="message" rows="5" minlength="30" maxlength="1600" placeholder="Le moment, l’adresse ou l’attention qui a fait la différence…" required></textarea></label>
+          <label class="review-upload">Quelques photos <small>JPG, PNG ou WebP · 3 maximum</small><input name="photos" type="file" accept="image/jpeg,image/png,image/webp" multiple /></label>
+          <div class="review-previews" data-review-previews aria-live="polite"></div>
+          <label class="consent review-photo-consent" hidden data-photo-consent><input name="photoConsent" type="checkbox" /> J’autorise S Escapes à publier les photos jointes avec mon avis, si celui-ci est validé.</label>
+          <label class="consent"><input name="consent" type="checkbox" required /> J’accepte que S Escapes utilise mon avis après validation et j’ai lu la <a href="/confidentialite.html">Politique de confidentialité</a>.</label>
+          <button class="pill pill--solid" type="submit">Envoyer mon avis <span aria-hidden="true">→</span></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+        <section class="form-success form-success--review" data-review-success hidden aria-live="polite">
+          <p class="sect-label">Merci pour ce partage</p>
+          <h2>Votre souvenir est bien arrivé.</h2>
+          <p>Notre équipe va le relire avec attention avant toute publication.</p>
+          <button class="pill pill--solid" type="button" data-close-modal>Fermer</button>
+        </section>
+      </div>
+    </dialog>
+
+    <script src="/analytics.js"></script>
+    <script src="/lead-config.js"></script>
+    <script type="module" src="/src/travel.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5eedd" />
+    <meta name="description" content="Découvrez ce voyage S Escapes." />
+    <link rel="canonical" href="/voyages/laponie.html" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%23f5eedd%22/><text x=%2250%22 y=%2270%22 text-anchor=%22middle%22 font-size=%2260%22 fill=%22%231f4a31%22 font-family=%22Georgia%22>S</text></svg>" />
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600&f[]=switzer@300,400,500,600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,300..500&family=Caveat:wght@500;600;700&display=swap" />
+    <link rel="stylesheet" href="/src/destination.css" />
+    <title>Voyage — S Escapes</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="topbar" data-header>
+      <a class="wordmark" href="/" aria-label="S Escapes, accueil">S&nbsp;Escapes<sup>®</sup></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+        <span></span><span></span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+        <a href="/#departs"><i>01</i>Départs</a>
+        <a href="/#atelier"><i>02</i>Sur mesure</a>
+        <a href="/hajj-omra.html"><i>03</i>Hajj &amp; Omra</a>
+        <a class="pill pill--solid" href="#contact-voyage">Recevoir le programme</a>
+      </nav>
+    </header>
+
+    <main id="contenu">
+      <section class="cover cover--voyage" id="haut">
+        <picture class="cover-photo" aria-hidden="true"><img data-image alt="" fetchpriority="high" /></picture>
+        <div class="cover-inner">
+          <a class="back-link" href="/#departs">← Index des départs</a>
+          <p class="cover-kicker" data-coords></p>
+          <h1><span class="line" data-name></span></h1>
+          <p class="cover-sub cover-sub--accent" data-subtitle></p>
+          <div class="cover-actions">
+            <a class="pill pill--solid" href="#contact-voyage">Recevoir le programme</a>
+            <a class="pill" data-adapt-link href="/#atelier">Adapter ce voyage</a>
+          </div>
+        </div>
+        <div class="cover-strip cover-strip--meta">
+          <span data-duration></span>
+          <span class="strip-route" aria-hidden="true"><b></b></span>
+          <span class="strip-price" data-price></span>
+        </div>
+        <dl class="voyage-summary" aria-label="Repères du voyage"><div><dt>Période idéale</dt><dd data-ideal-period></dd></div><div><dt>Style</dt><dd data-style></dd></div></dl>
+      </section>
+
+      <section class="story" id="essentiel">
+        <figure class="story-photo polaroid reveal" data-tilt><img data-secondary-image alt="" loading="lazy" /><figcaption data-note></figcaption></figure>
+        <div class="story-copy reveal">
+          <p class="sect-label"><i>01</i>L’essentiel du voyage</p>
+          <h2 data-subtitle-copy></h2>
+          <p class="lede" data-copy></p>
+        </div>
+      </section>
+
+      <section class="plan">
+        <div class="plan-itinerary reveal">
+          <p class="sect-label"><i>02</i>Votre parcours</p>
+          <h2>Un itinéraire<br />pensé pour <em>vous</em>.</h2>
+          <ol class="itinerary" data-itinerary></ol>
+        </div>
+        <aside class="plan-includes reveal">
+          <p class="sect-label"><i>03</i>Votre formule</p>
+          <h3>Ce qui est inclus</h3>
+          <ul class="includes" data-includes></ul>
+          <h3>À prévoir</h3>
+          <ul class="includes includes--prepare" data-prepare></ul>
+          <p class="price-note"><strong>Budget indicatif</strong> : montant par personne, affiné selon vos dates, disponibilités et options retenues.</p>
+          <div class="plan-ready">
+            <p>Prêt à partir ?</p>
+            <a class="pill pill--solid" href="#contact-voyage">Recevoir le programme</a>
+            <a class="text-link" data-adapt-link href="/#atelier">Imaginer ce voyage pour moi</a>
+          </div>
+        </aside>
+      </section>
+
+      <section class="alternatives">
+        <header><p class="sect-label"><i>04</i>À prolonger</p><h2>D’autres départs<br />à <em>imaginer</em>.</h2></header>
+        <div class="alternative-list" data-alternatives></div>
+      </section>
+
+      <section class="contact" id="contact-voyage">
+        <div class="contact-copy reveal">
+          <p class="sect-label"><i>05</i>Votre prochain départ</p>
+          <h2>Parlons de<br />ce <em>voyage</em>.</h2>
+          <p class="lede">Recevez le programme détaillé ou demandez-nous d’adapter cette échappée à vos envies.</p>
+          <div class="contact-direct"><a href="tel:+33634693243">06 34 69 32 43</a></div>
+        </div>
+        <form class="contact-form reveal" data-voyage-form>
+          <label>Nom<input name="name" autocomplete="name" required /></label>
+          <label>E-mail<input name="email" type="email" autocomplete="email" required /></label>
+          <label>Téléphone<input name="phone" type="tel" autocomplete="tel" /></label>
+          <label class="field-wide">Votre message<textarea name="message" rows="4"></textarea></label>
+          <label class="consent field-wide"><input name="consent" type="checkbox" required /> J’accepte d’être recontacté(e) au sujet de ce voyage et la <a href="/confidentialite.html">Politique de confidentialité</a>.</label>
+          <button class="pill pill--solid" type="submit">Recevoir le programme</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+        <section class="form-success" data-form-success hidden aria-live="polite"><p class="sect-label">Demande bien reçue</p><h3>Le programme arrive bientôt.</h3><p>Merci pour votre confiance. <span data-response-time></span></p></section>
+      </section>
+    </main>
+
+    <footer class="deck">
+      <p class="deck-mark" aria-hidden="true">S&nbsp;Escapes</p>
+      <div class="deck-grid">
+        <p>Voyages prêts à partir, sur mesure,<br />Hajj &amp; Omra.</p>
+        <nav aria-label="Liens de pied de page">
+          <a href="/#departs">Départs</a>
+          <a href="/#atelier">Sur mesure</a>
+          <a href="/hajj-omra.html">Hajj &amp; Omra</a>
+        </nav>
+        <div>
+          <a href="tel:+33634693243">06 34 69 32 43</a>
+          <a href="mailto:escapes.travelplanner@gmail.com">E-mail</a>
+        </div>
+      </div>
+      <small>© <span data-year></span> S Escapes.</small>
+    </footer>
+
+    <script src="/analytics.js"></script>
+    <script src="/lead-config.js"></script>
+    <script type="module" src="/src/destination.js"></script>
+  </body>
+</html>

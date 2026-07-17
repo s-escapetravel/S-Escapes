@@ -1,0 +1,119 @@
+@import './travel.css';
+
+/* Hajj & Omra — the atlas system, pinned to its dark emerald night */
+:root {
+  --night: #0c1310;
+  --night-soft: #111a16;
+  --night-panel: #0f1713;
+  --ivory: #f0eae0;
+  --ivory-dim: rgba(240, 234, 224, .6);
+  --ivory-faint: rgba(240, 234, 224, .32);
+  --line: rgba(240, 234, 224, .13);
+  --line-strong: rgba(240, 234, 224, .3);
+  --dawn: #d9b36a;
+  --dawn-deep: #b8924b;
+  --sea: #d9b36a;
+  --gold: #d9b36a;
+  --gold-bright: #e5c584;
+  --paper-white: #f0eae0;
+  --glass: color-mix(in srgb, var(--night) 84%, transparent);
+}
+
+::selection { background: var(--dawn); color: var(--night); }
+h2 em, h1 em { background: none; padding: 0; }
+body::after { mix-blend-mode: overlay; opacity: .04; }
+.pill--solid { background: var(--ivory); border-color: var(--ivory); color: var(--night); }
+.topbar:not(.is-scrolled) .main-nav .pill--solid { background: var(--ivory); border-color: var(--ivory); color: #1d2a24; }
+.topbar:not(.is-scrolled) .main-nav .pill--solid:hover { background: var(--dawn); color: #1d2a24; }
+.topbar.is-scrolled .wordmark sup { color: var(--dawn); }
+.main-nav .nav-return { position: relative; margin-left: .15rem; padding-left: 1.05rem; color: var(--dawn); opacity: 1; }
+.main-nav .nav-return::before { content: ""; position: absolute; left: 0; top: 50%; width: 1px; height: 1.25rem; background: currentColor; opacity: .72; transform: translateY(-50%); }
+.main-nav .nav-return::after { content: "↗"; margin-left: .12rem; font-size: .78rem; line-height: 1; }
+.topbar.is-scrolled .main-nav .nav-return { color: var(--dawn); }
+.contact { border: 1px solid var(--line); border-image: none; border-radius: 22px; }
+.pill--solid:hover { background: var(--dawn); border-color: var(--dawn); color: var(--night); }
+.cover .pill--solid { background: var(--ivory); border-color: var(--ivory); color: #1d2a24; }
+.cover .pill--solid:hover { background: var(--dawn); border-color: var(--dawn); color: #1d2a24; }
+select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23d9b36a' stroke-width='1.5'/%3E%3C/svg%3E"); }
+select option { color: #1d2a24; background: #fffdf8; }
+.wordmark sup { color: var(--dawn); font-style: italic; font-family: var(--accent); text-transform: none; letter-spacing: .02em; }
+.cover--sacred .cover-photo::after { background: linear-gradient(180deg, rgba(12, 19, 16, .4) 0%, rgba(12, 19, 16, .22) 40%, rgba(12, 19, 16, .72) 88%, var(--night) 100%); }
+.cover--sacred .cover-photo img { animation-duration: 22s; }
+.cover--sacred h1 .line { animation-duration: 1.25s !important; }
+.cover--sacred .cover-sub { animation-duration: 1.15s !important; }
+.cover--sacred .cover-actions { animation-duration: 1.2s !important; }
+.cover--sacred .cover-strip { transition-duration: 1s; }
+
+/* ---------- Hajj & Omra guidance ---------- */
+.sacred-choice, .practical, .preparation, .faq { max-width: var(--max); margin: 0 auto; padding: clamp(4.5rem, 8vw, 8rem) var(--gutter); }
+.sacred-choice > header, .practical > header, .preparation > header, .faq > header { max-width: 720px; margin-bottom: clamp(2.4rem, 5vw, 4rem); }
+.choice-grid, .practical-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.choice-grid article, .practical-grid article { padding: clamp(1.6rem, 3vw, 2.6rem); border: 1px solid var(--line); background: var(--night-panel); }
+.choice-grid h3, .practical-grid h3 { margin-bottom: .9rem; font-size: clamp(1.8rem, 3vw, 2.8rem); }
+.choice-grid p { color: var(--ivory-dim); }
+.choice-grid dl { margin: 1.8rem 0; }
+.choice-grid dl div { padding: .8rem 0; border-top: 1px solid var(--line); }
+.choice-grid dt { color: var(--dawn); font: 500 .62rem/1 var(--body); letter-spacing: .16em; text-transform: uppercase; }
+.choice-grid dd { margin: .45rem 0 0; color: var(--ivory-dim); font-size: .92rem; }
+.practical { border-top: 1px solid var(--line); }
+.practical-grid ul { margin: 0; padding: 0; list-style: none; }
+.practical-grid li { padding: .85rem 0 .85rem 1.6rem; border-top: 1px solid var(--line); color: var(--ivory-dim); }
+.practical-grid li::before { content: "•"; position: absolute; margin-left: -1.3rem; color: var(--dawn); }
+.preparation { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(2rem, 7vw, 7rem); background: linear-gradient(90deg, rgba(217,179,106,.08), transparent 55%); }
+.preparation > header { margin: 0; }
+.preparation ol { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+.preparation li { display: grid; grid-template-columns: 3rem 1fr; gap: 1rem; padding: 1.4rem 0; border-bottom: 1px solid var(--line); }
+.preparation li > span { color: var(--dawn); font: italic 400 1.1rem/1 var(--accent); }
+.preparation h3 { margin-bottom: .35rem; font-size: 1.45rem; }
+.preparation p { margin: 0; color: var(--ivory-dim); }
+.faq { border-top: 1px solid var(--line); }
+.faq-list { max-width: 900px; }
+.faq details { border-top: 1px solid var(--line); }
+.faq details:last-child { border-bottom: 1px solid var(--line); }
+.faq summary { display: flex; justify-content: space-between; gap: 2rem; padding: 1.25rem 0; cursor: pointer; font: 500 clamp(1.05rem, 2vw, 1.4rem)/1.35 var(--display); }
+.faq summary::after { content: "+"; color: var(--dawn); font: 300 1.6rem/1 var(--accent); }
+.faq details[open] summary::after { content: "−"; }
+.faq details p { max-width: 740px; margin: 0 0 1.35rem; color: var(--ivory-dim); }
+.text-link { color: var(--dawn); font: 500 .68rem/1.4 var(--body); letter-spacing: .14em; text-transform: uppercase; text-decoration: underline; text-underline-offset: .25em; }
+@media (max-width: 860px) { .choice-grid, .practical-grid, .preparation { grid-template-columns: 1fr; } }
+
+@media (max-width: 860px) {
+  .cover--sacred .cover-photo img { transform: scale(1.14); object-position: 50% 66%; }
+  .cover--sacred .cover-photo::after { background: linear-gradient(180deg, rgba(12, 19, 16, .42) 0%, rgba(12, 19, 16, .24) 38%, rgba(12, 19, 16, .78) 88%, var(--night) 100%); }
+}
+
+/* ---------- stages ---------- */
+.chemin { max-width: var(--max); margin: 0 auto; padding: clamp(5rem, 9vw, 9rem) var(--gutter) clamp(3.5rem, 6vw, 6rem); }
+.stage-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1.6rem, 3vw, 3rem); }
+.stage figure { position: relative; margin: 0 0 1.6rem; }
+.stage figure img { aspect-ratio: 4 / 3; object-fit: cover; border-radius: 14px; }
+.stage figure span { position: absolute; left: 1rem; bottom: 1rem; display: grid; place-items: center; padding: .5rem .85rem; border-radius: 99px; background: rgba(12, 19, 16, .74); backdrop-filter: blur(6px); color: var(--dawn); font: italic 400 1rem/1 var(--accent); }
+.stage h3 { margin-bottom: .6rem; font-size: 1.7rem; }
+.stage ul { margin: 0; padding: 0; list-style: none; }
+.stage li { padding: .95rem 0; border-top: 1px solid var(--line); }
+.stage strong { display: block; margin-bottom: .25rem; font: 500 1.02rem/1.3 var(--body); }
+.stage small { font: 300 .9rem/1.55 var(--body); color: var(--ivory-dim); }
+
+/* ---------- fares ---------- */
+.fares { max-width: var(--max); margin: 0 auto; padding: clamp(4rem, 7vw, 7rem) var(--gutter); }
+.fare-list { display: grid; gap: 1.1rem; }
+.fare { position: relative; display: grid; grid-template-columns: 1fr 1.35fr auto; gap: 2rem; align-items: center; padding: 2rem 2.2rem; border: 1px solid var(--line); border-radius: 18px; background: var(--night-panel); transition: border-color .35s; }
+.fare:hover { border-color: var(--line-strong); }
+.fare--featured { border-color: rgba(217, 179, 106, .5); background: linear-gradient(140deg, rgba(217, 179, 106, .09), var(--night-panel) 55%); }
+.fare-badge { position: absolute; top: 0; left: 2rem; transform: translateY(-50%); margin: 0; padding: .45rem 1rem; border-radius: 99px; background: var(--dawn); color: var(--night); font: 500 .62rem/1 var(--body); letter-spacing: .22em; text-transform: uppercase; }
+.fare-id h3 { margin-bottom: .5rem; font-size: clamp(1.6rem, 2.4vw, 2.2rem); }
+.fare-id p { margin: 0; font: italic 300 1.05rem/1.4 var(--accent); color: var(--dawn); }
+.fare dl { display: grid; grid-template-columns: repeat(2, 1fr); gap: .35rem 1.6rem; margin: 0; }
+.fare dl div { display: flex; justify-content: space-between; gap: 1rem; padding: .5rem 0; border-bottom: 1px solid var(--line); font-size: .85rem; }
+.fare dt { font: 500 .62rem/1.8 var(--body); letter-spacing: .18em; text-transform: uppercase; color: var(--ivory-faint); }
+.fare dd { margin: 0; text-align: right; color: var(--ivory); font-weight: 300; }
+.fare-cta { display: grid; gap: .8rem; justify-items: center; }
+.fare-cta strong { font: italic 400 1.15rem/1 var(--accent); color: var(--ivory-dim); font-weight: 400; }
+.contact-hours { margin-top: 1rem; font: 300 .85rem/1.5 var(--body); color: var(--ivory-faint); }
+
+@media (max-width: 1120px) {
+  .stage-grid { grid-template-columns: 1fr; max-width: 640px; }
+  .fare { grid-template-columns: 1fr; gap: 1.4rem; }
+  .fare dl { grid-template-columns: 1fr; }
+  .fare-cta { justify-items: start; }
+}

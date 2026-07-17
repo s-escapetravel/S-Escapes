@@ -1,0 +1,65 @@
+@import './travel.css';
+
+/* Voyage pages — atlas system */
+.cover--voyage { min-height: min(860px, 100svh); }
+.back-link { display: inline-block; margin-bottom: 2.2rem; font: 500 .7rem/1 var(--body); letter-spacing: .2em; text-transform: uppercase; color: inherit; opacity: .78; transition: opacity .3s, color .3s; }
+.back-link:hover { opacity: 1; color: var(--gold-bright); }
+.cover--voyage h1 { font-size: clamp(3.6rem, 10vw, 9.5rem); }
+.cover-sub--accent { font: italic 300 clamp(1.3rem, 2.2vw, 1.9rem)/1.35 var(--accent); color: var(--gold-bright); }
+.cover-strip--meta { color: var(--ivory-dim); }
+.strip-price { color: var(--ivory); font-size: .78rem; }
+.voyage-summary { position: absolute; z-index: 3; right: var(--gutter); top: 7.5rem; display: grid; gap: .6rem; margin: 0; padding: 1rem 1.1rem; border: 1px solid rgba(245,238,221,.28); background: rgba(12,24,16,.28); backdrop-filter: blur(10px); color: #fff; }
+.voyage-summary div { display: grid; gap: .2rem; }
+.voyage-summary dt { color: #f0d896; font: 500 .6rem/1 var(--body); letter-spacing: .16em; text-transform: uppercase; }
+.voyage-summary dd { margin: 0; font: 400 .92rem/1.3 var(--body); }
+
+/* ---------- story ---------- */
+.story { max-width: var(--max); margin: 0 auto; padding: clamp(4.5rem, 8vw, 8rem) var(--gutter); display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(3rem, 7vw, 8rem); align-items: center; }
+.story-photo { max-width: 450px; justify-self: center; --tilt: -2.5deg; }
+.story-copy .lede { margin-top: 1.5rem; max-width: 540px; }
+
+/* ---------- plan ---------- */
+.plan { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter) clamp(4.5rem, 8vw, 8rem); display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(3rem, 7vw, 8rem); align-items: start; }
+.itinerary { margin: 2.4rem 0 0; padding: 0 0 0 clamp(0rem, 2vw, 2rem); list-style: none; border-left: 1px dashed var(--line-strong); }
+.itinerary li { display: flex; gap: 1.4rem; align-items: baseline; padding: 1.3rem 0; opacity: 0; transform: translateY(14px); transition: opacity .7s var(--delay, 0s) ease, transform .7s var(--delay, 0s) var(--ease); }
+.plan-itinerary.is-visible .itinerary li { opacity: 1; transform: none; }
+.itinerary li + li { border-top: 1px solid var(--line); }
+.itinerary li > span { flex: 0 0 auto; font: italic 400 1.1rem/1 var(--accent); color: var(--dawn); font-variant-numeric: tabular-nums; }
+.itinerary strong { display: block; margin-bottom: .3rem; font: 500 1.3rem/1.2 var(--display); }
+.itinerary small { font: 300 .95rem/1.6 var(--body); color: var(--ivory-dim); }
+.plan-includes { position: sticky; top: 108px; padding: 2.2rem; border: 1px solid var(--line); border-radius: 18px; background: var(--night-panel); }
+.plan-includes h3 { margin-bottom: 1.4rem; font-size: 1.7rem; }
+.includes { display: flex; flex-wrap: wrap; gap: .6rem; margin: 0 0 2rem; padding: 0; list-style: none; }
+.includes li { padding: .6rem 1.05rem; border: 1px solid var(--line-strong); border-radius: 99px; font: 400 .85rem/1 var(--body); color: var(--ivory); }
+.includes--prepare { margin-bottom: 1.4rem; }
+.price-note { margin: 1.25rem 0; padding: 1rem 0; border-block: 1px solid var(--line); color: var(--ivory-dim); font: 300 .84rem/1.55 var(--body); }
+.price-note strong { color: var(--ivory); font-weight: 500; }
+.text-link { display: inline-block; margin-top: 1rem; color: var(--dawn); font: 500 .68rem/1.4 var(--body); letter-spacing: .13em; text-transform: uppercase; text-decoration: underline; text-underline-offset: .25em; }
+
+/* ---------- alternatives ---------- */
+.alternatives { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter) clamp(4.5rem, 8vw, 8rem); display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(2rem, 6vw, 6rem); align-items: end; }
+.alternative-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.alternative-list a { position: relative; display: grid; min-height: 270px; overflow: hidden; color: #fff; }
+.alternative-list img { position: absolute; inset: 0; height: 100%; object-fit: cover; transition: transform .6s var(--ease); }
+.alternative-list a::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(12,24,16,.72), transparent 65%); }
+.alternative-list span, .alternative-list small { position: relative; z-index: 1; align-self: end; margin: 0 1.2rem; }
+.alternative-list span { margin-bottom: .25rem; font: italic 400 2rem/1 var(--accent); }
+.alternative-list small { margin-bottom: 1.15rem; color: #f0d896; font: 500 .65rem/1 var(--body); letter-spacing: .14em; text-transform: uppercase; }
+.alternative-list a:hover img, .alternative-list a:focus-visible img { transform: scale(1.05); }
+.plan-ready { padding-top: 1.6rem; border-top: 1px solid var(--line); }
+.plan-ready p { margin-bottom: 1rem; font: italic 400 1.3rem/1 var(--accent); color: var(--dawn); }
+
+@media (max-width: 1120px) {
+  .story { grid-template-columns: 1fr; }
+  .story-photo { justify-self: start; }
+  .plan { grid-template-columns: 1fr; }
+  .plan-includes { position: static; }
+  .alternatives { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 860px) {
+  .voyage-summary { position: absolute; top: 5.5rem; right: 1.25rem; left: 1.25rem; grid-template-columns: 1fr 1fr; background: rgba(12,24,16,.42); }
+  .alternatives { padding-inline: var(--gutter); }
+  .alternative-list { grid-template-columns: 1fr; }
+  .alternative-list a { min-height: 310px; }
+}

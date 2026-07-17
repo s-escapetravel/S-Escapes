@@ -1,0 +1,14 @@
+.netlify/
+.firebase/
+.firebaserc
+.claude/
+node_modules/
+dist/
+tina/__generated__/
+firebase-debug*.log
+firebase.json
+.DS_Store
+design/
+.env
+.env.*
+!.env.example
