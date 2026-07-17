@@ -6,6 +6,8 @@ Production-ready, two-part website for S Escapes:
 - `hajj-omra.html`: dedicated Hajj and Omra experience
 - `voyages/*.html`: dedicated, shareable pages for every featured voyage
 
+For the client handoff and first deployment, follow [HANDOFF.md](HANDOFF.md).
+
 ## Run locally
 
 ```bash
@@ -20,6 +22,7 @@ npm run build
 ```
 
 The deployable files are generated in `dist/`. Both pages are included in the build.
+On Netlify, the build also generates the TinaCMS editor at `/admin/`; it fails intentionally if Tina production credentials are missing.
 
 ## Lead delivery and forms
 
