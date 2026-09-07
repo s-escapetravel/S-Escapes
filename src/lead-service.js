@@ -7,6 +7,7 @@ const defaultConfig = {
   responseTime: ''
 }
 
+
 export const leadConfig = () => ({ ...defaultConfig, ...(window.S_ESCAPES_LEAD_CONFIG || {}) })
 
 const value = (data, name) => String(data.get(name) || '').trim()
@@ -70,7 +71,7 @@ export const createLeadPayload = ({ form, kind, extras = {} }) => {
     },
     consent: {
       marketingOrContact: data.get('consent') === 'on',
-      privacyPolicy: '/confidentialite.html'
+      privacyPolicy: '/confidentialite'
     },
     notifications: {
       internalBrief: {

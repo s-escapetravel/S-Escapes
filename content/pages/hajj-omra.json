@@ -1,0 +1,205 @@
+{
+  "pageName": "Hajj & Omra",
+  "seo": {
+    "title": "S Escapes Hajj & Omra — Un voyage sacré, préparé avec soin",
+    "description": "Hajj et Omra avec S Escapes : préparation, formalités, vols, hébergements, transferts et accompagnement à chaque étape.",
+    "image": "/images/hajj-kaaba-hero.png",
+    "noIndex": false
+  },
+  "hero": {
+    "kicker": "21.42° N · 39.83° E — La Mecque",
+    "heading": "Un voyage sacré,",
+    "headingAccent": "préparé avec soin.",
+    "intro": "De la première intention au retour, chaque étape est anticipée pour vous permettre de vivre l’essentiel.",
+    "image": "/images/hajj-kaaba-hero.webp",
+    "imageMobile": "/images/hajj-kaaba-hero-mobile.webp",
+    "primaryCta": "Découvrir l’accompagnement",
+    "secondaryCta": "Voir les formules",
+    "stripLeft": "Vols · Hébergements · Transferts",
+    "stripRight": "Visas · Guides · Rites"
+  },
+  "choices": {
+    "number": "01",
+    "label": "Choisir son chemin",
+    "heading": "Hajj ou Omra,",
+    "headingAccent": "selon votre intention.",
+    "items": [
+      {
+        "title": "Le Hajj",
+        "copy": "Un pèlerinage accompli à une période précise, qui demande une préparation approfondie et un échange dédié.",
+        "facts": [
+          { "label": "Quand", "value": "Dates définies du pèlerinage" },
+          { "label": "Préparation", "value": "Spirituelle, pratique et logistique" },
+          { "label": "Premier pas", "value": "Échanger avec un conseiller" }
+        ],
+        "cta": "Parler de mon Hajj",
+        "href": "#rappel"
+      },
+      {
+        "title": "L’Omra",
+        "copy": "Un voyage spirituel possible selon les disponibilités, avec plusieurs rythmes d’accompagnement.",
+        "facts": [
+          { "label": "Quand", "value": "Selon les départs disponibles" },
+          { "label": "Préparation", "value": "Guidée selon votre formule" },
+          { "label": "Premier pas", "value": "Choisir une formule ou être rappelé" }
+        ],
+        "cta": "Voir les formules Omra",
+        "href": "#formules"
+      }
+    ]
+  },
+  "journey": {
+    "number": "01",
+    "label": "Le chemin, étape par étape",
+    "heading": "Nous préparons tout.",
+    "headingAccent": "Vous vivez l’essentiel.",
+    "stages": [
+      {
+        "title": "Avant le départ",
+        "image": "/images/hajj-quran.jpg",
+        "imageAlt": "Préparation spirituelle avant le départ",
+        "items": [
+          { "title": "Conseil sur la formule", "copy": "Une proposition adaptée à vos besoins." },
+          { "title": "Formalités et visa", "copy": "Un dossier préparé et suivi avec soin." },
+          { "title": "Préparation aux rites", "copy": "Des sessions claires, pratiques et sereines." },
+          { "title": "Checklist personnalisée", "copy": "Chaque détail utile réuni avant le départ." }
+        ]
+      },
+      {
+        "title": "Pendant le séjour",
+        "image": "/images/hajj-medina.jpg",
+        "imageAlt": "Médine pendant le séjour",
+        "items": [
+          { "title": "Vols et transferts coordonnés", "copy": "Des trajets fluides et anticipés." },
+          { "title": "Hébergements sélectionnés", "copy": "Le confort au plus près de vos priorités." },
+          { "title": "Accompagnateurs francophones", "copy": "Une présence bienveillante au quotidien." },
+          { "title": "Assistance sur place", "copy": "Une équipe réactive tout au long du séjour." }
+        ]
+      },
+      {
+        "title": "Au retour",
+        "image": "/images/hajj-prayer.jpg",
+        "imageAlt": "Moment de recueillement au retour",
+        "items": [
+          { "title": "Suivi", "copy": "Nous restons à vos côtés après le retour." },
+          { "title": "Disponibilité de l’équipe", "copy": "Pour répondre à vos dernières questions." },
+          { "title": "Conseils pour la suite", "copy": "Pour prolonger les bienfaits du voyage." }
+        ]
+      }
+    ]
+  },
+  "hajjPromo": {
+    "number": "02",
+    "label": "Préparer le Hajj",
+    "heading": "Clarté dans l’organisation.",
+    "headingAccent": "Présence à chaque étape.",
+    "intro": "Le Hajj demande une préparation rigoureuse — physique, logistique et spirituelle. S Escapes vous aide à structurer les formalités, comprendre le parcours et anticiper les besoins pratiques. Les programmes sont établis sur demande selon les départs et conditions disponibles.",
+    "image": "/images/hajj-mosque-dusk.jpg",
+    "cta": "Échanger avec un conseiller"
+  },
+  "practical": {
+    "number": "03",
+    "label": "Repères pratiques",
+    "heading": "Ce qui est préparé,",
+    "headingAccent": "ce qui reste à prévoir.",
+    "columns": [
+      {
+        "title": "Selon votre programme",
+        "items": ["Conseil sur le parcours et la formule", "Vols, hébergements et transferts sélectionnés", "Accompagnement des démarches de visa", "Repères pratiques avant le départ"]
+      },
+      {
+        "title": "À anticiper avec vous",
+        "items": ["Validité des documents de voyage", "Choix de la formule et des dates", "Préparation personnelle et équipements", "Questions de santé à voir avec un professionnel qualifié"]
+      }
+    ]
+  },
+  "packages": {
+    "number": "04",
+    "label": "Nos formules Omra",
+    "heading": "L’accompagnement",
+    "headingAccent": "qui vous convient.",
+    "items": [
+      {
+        "name": "Omra Essentielle",
+        "tagline": "L’essentiel pour un voyage maîtrisé.",
+        "featured": false,
+        "badge": "",
+        "price": "Sur devis",
+        "features": [
+          { "label": "Vols", "value": "Selon disponibilité" },
+          { "label": "Hébergements", "value": "Standard" },
+          { "label": "Transferts", "value": "Groupés" },
+          { "label": "Visa", "value": "Accompagné" },
+          { "label": "Accompagnement", "value": "Essentiel" }
+        ],
+        "cta": "Demander le programme"
+      },
+      {
+        "name": "Omra Sérénité",
+        "tagline": "Plus de confort, plus de tranquillité.",
+        "featured": true,
+        "badge": "Recommandée",
+        "price": "Sur devis",
+        "features": [
+          { "label": "Vols", "value": "Selon disponibilité" },
+          { "label": "Hébergements", "value": "Proches des lieux saints" },
+          { "label": "Transferts", "value": "Coordonnés" },
+          { "label": "Visa", "value": "Accompagné" },
+          { "label": "Accompagnement", "value": "Renforcé" }
+        ],
+        "cta": "Demander le programme"
+      },
+      {
+        "name": "Omra Signature",
+        "tagline": "L’excellence dans chaque détail.",
+        "featured": false,
+        "badge": "",
+        "price": "Sur devis",
+        "features": [
+          { "label": "Vols", "value": "Selon disponibilité" },
+          { "label": "Hébergements", "value": "Sélection d’exception" },
+          { "label": "Transferts", "value": "Privatifs premium" },
+          { "label": "Visa", "value": "Accompagné" },
+          { "label": "Accompagnement", "value": "Dédié" }
+        ],
+        "cta": "Demander le programme"
+      }
+    ]
+  },
+  "preparation": {
+    "number": "05",
+    "label": "Préparer son départ",
+    "heading": "Un repère à consulter",
+    "headingAccent": "avant de nous parler.",
+    "items": [
+      { "title": "Documents", "copy": "Vérifiez passeport, conditions de visa et informations remises par votre conseiller." },
+      { "title": "Rythme du séjour", "copy": "Partagez vos besoins, votre situation familiale et vos attentes d’accompagnement." },
+      { "title": "Préparation pratique", "copy": "Anticipez bagages, vêtements et conseils adaptés à votre situation." }
+    ]
+  },
+  "faq": {
+    "number": "06",
+    "label": "Questions fréquentes",
+    "heading": "Répondre avec",
+    "headingAccent": "clarté.",
+    "items": [
+      { "question": "Comment fonctionnent les visas et documents ?", "answer": "Les exigences varient selon votre situation et les conditions en vigueur. Nous vous indiquons les documents à préparer et vous accompagnons dans les étapes prévues par votre programme." },
+      { "question": "Quelle est la taille des groupes ?", "answer": "Elle dépend de la formule et du départ. Nous vous donnons une information précise avant toute confirmation." },
+      { "question": "Comment choisissez-vous les hébergements ?", "answer": "Les options sont présentées selon la formule, la localisation, le niveau de confort et les disponibilités réelles du moment." },
+      { "question": "Quel accompagnement est prévu ?", "answer": "Le niveau d’accompagnement dépend de la formule. Nous précisons ce qui est prévu avant le départ et pendant le séjour." },
+      { "question": "Comment se déroule le calendrier de paiement ?", "answer": "Les modalités sont détaillées dans votre proposition, selon les prestations retenues et les conditions des partenaires." },
+      { "question": "Les femmes et les familles peuvent-elles voyager ensemble ?", "answer": "Nous prenons le temps de comprendre votre situation afin de vous orienter vers le programme et l’accompagnement les plus adaptés." },
+      { "question": "Qu’en est-il de la santé et de la préparation physique ?", "answer": "Nous pouvons partager des repères pratiques, mais ils ne remplacent pas l’avis d’un professionnel de santé. Consultez-en un pour toute question personnelle." }
+    ]
+  },
+  "contact": {
+    "number": "07",
+    "label": "Un conseiller vous rappelle",
+    "heading": "Parlons de",
+    "headingAccent": "votre projet.",
+    "intro": "Quelques informations nous permettront de préparer un premier échange utile et de vous proposer la formule la plus adaptée.",
+    "submitLabel": "Demander à être rappelé",
+    "successTitle": "Nous préparons votre premier échange.",
+    "successCopy": "Merci pour votre confiance."
+  }
+}

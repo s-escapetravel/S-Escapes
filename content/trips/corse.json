@@ -1,0 +1,81 @@
+{
+  "title": "Corse",
+  "destination": "42.70° N · 9.45° E",
+  "location": "42.70° N · 9.45° E",
+  "price": "À partir de 1 200 € / pers.",
+  "duration": "10 jours / 9 nuits",
+  "coverImage": "/images/dest-corse.jpg",
+  "description": "Un road trip de Bastia à Bonifacio, construit pour alterner routes panoramiques, villages de caractère, criques secrètes et tables corses.",
+  "highlights": [
+    "Vol aller-retour",
+    "Hébergements",
+    "Location de voiture",
+    "Carnet de route"
+  ],
+  "slug": "corse",
+  "status": "published",
+  "featured": true,
+  "order": 5,
+  "category": "nature",
+  "note": "Entre mer & montagne ♡",
+  "subtitle": "Entre mer et montagne",
+  "secondaryImage": "/images/supporting-corse.png",
+  "idealPeriod": "Mai à octobre",
+  "style": "Road trip & nature",
+  "prepare": [
+    "Permis de conduire",
+    "Chaussures de marche",
+    "Bagage souple"
+  ],
+  "itinerary": [
+    {
+      "title": "Bastia",
+      "copy": "Arrivée et premiers pas dans le Cap Corse."
+    },
+    {
+      "title": "Calvi",
+      "copy": "Routes côtières et citadelle face à la mer."
+    },
+    {
+      "title": "Corte",
+      "copy": "Montagnes, rivières et cœur historique."
+    },
+    {
+      "title": "Ajaccio",
+      "copy": "Rivages, marché et art de vivre corse."
+    },
+    {
+      "title": "Bonifacio",
+      "copy": "Falaises blanches et conclusion du voyage."
+    }
+  ],
+  "body": {
+    "type": "root",
+    "children": [
+      {
+        "type": "p",
+        "children": [
+          {
+            "type": "text",
+            "text": "Un road trip de Bastia à Bonifacio, construit pour alterner routes panoramiques, villages de caractère, criques secrètes et tables corses."
+          }
+        ]
+      }
+    ]
+  },
+  "seo": {
+    "title": "Road trip en Corse — S Escapes",
+    "description": "De Bastia à Bonifacio, découvrez un road trip entre routes panoramiques, villages, criques et tables corses.",
+    "image": "/images/dest-corse.jpg",
+    "noIndex": false
+  },
+  "name": "Corse",
+  "image": "/images/dest-corse.jpg",
+  "copy": "Un road trip de Bastia à Bonifacio, construit pour alterner routes panoramiques, villages de caractère, criques secrètes et tables corses.",
+  "includes": [
+    "Vol aller-retour",
+    "Hébergements",
+    "Location de voiture",
+    "Carnet de route"
+  ]
+}

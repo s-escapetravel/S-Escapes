@@ -1,0 +1,65 @@
+---
+import { siteSettings } from '../lib/content'
+
+interface Props {
+  title?: string
+  description?: string
+  image?: string
+  canonicalPath?: string
+  themeColor?: string
+  noIndex?: boolean
+  sacred?: boolean
+  schema?: Record<string, unknown> | Record<string, unknown>[]
+}
+
+const {
+  title = siteSettings.defaultSeo.title,
+  description = siteSettings.defaultSeo.description,
+  image = siteSettings.defaultSeo.image,
+  canonicalPath = Astro.url.pathname,
+  themeColor = '#f5eedd',
+  noIndex = false,
+  sacred = false,
+  schema
+} = Astro.props
+const canonical = new URL(canonicalPath, siteSettings.siteUrl).toString()
+const socialImage = new URL(image, siteSettings.siteUrl).toString()
+const faviconBg = sacred ? '%230c1310' : '%23f5eedd'
+const faviconColor = sacred ? '%23d9b36a' : '%231f4a31'
+const responseTime = siteSettings.contact.responseTime
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content={themeColor} />
+    {noIndex && <meta name="robots" content="noindex,nofollow" />}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={socialImage} />
+    <link rel="canonical" href={canonical} />
+    {schema && <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />}
+    <link rel="icon" href={`data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22${faviconBg}%22/><text x=%2250%22 y=%2270%22 text-anchor=%22middle%22 font-size=%2260%22 fill=%22${faviconColor}%22 font-family=%22Georgia%22>S</text></svg>`} />
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600&f[]=switzer@300,400,500,600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,300..500&family=Caveat:wght@500;600;700&display=swap" />
+    <title>{title}</title>
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <slot />
+    <script is:inline src="/analytics.js"></script>
+    <script is:inline src="/lead-config.js"></script>
+    <script is:inline define:vars={{ responseTime }}>
+      window.S_ESCAPES_LEAD_CONFIG = window.S_ESCAPES_LEAD_CONFIG || {}
+      window.S_ESCAPES_LEAD_CONFIG.responseTime = responseTime
+    </script>
+  </body>
+</html>

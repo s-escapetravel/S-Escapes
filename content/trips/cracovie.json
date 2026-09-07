@@ -1,0 +1,81 @@
+{
+  "title": "Cracovie",
+  "destination": "50.06° N · 19.94° E",
+  "location": "50.06° N · 19.94° E",
+  "price": "À partir de 313 €",
+  "duration": "Mémoire & histoire",
+  "coverImage": "/images/dest-cracovie.jpg",
+  "description": "Un séjour guidé et profondément humain pour comprendre l’histoire, parcourir la ville et transmettre la mémoire avec justesse.",
+  "highlights": [
+    "Vol aller-retour",
+    "Hébergement",
+    "Visite guidée",
+    "Transferts"
+  ],
+  "slug": "cracovie",
+  "status": "published",
+  "featured": true,
+  "order": 3,
+  "category": "culture",
+  "note": "Mémoire & histoire",
+  "subtitle": "Un voyage de mémoire et d’histoire",
+  "secondaryImage": "/images/supporting-cracovie.png",
+  "idealPeriod": "Avril à octobre",
+  "style": "Culture & mémoire",
+  "prepare": [
+    "Carte d’identité valide",
+    "Tenue adaptée aux visites",
+    "Temps de recueillement"
+  ],
+  "itinerary": [
+    {
+      "title": "Arrivée à Cracovie",
+      "copy": "Accueil et première découverte de la vieille ville."
+    },
+    {
+      "title": "Cœur historique",
+      "copy": "Places, ruelles et patrimoine de Cracovie."
+    },
+    {
+      "title": "Mémoire",
+      "copy": "Journée guidée consacrée à l’histoire."
+    },
+    {
+      "title": "Culture polonaise",
+      "copy": "Quartiers, traditions et gastronomie locale."
+    },
+    {
+      "title": "Retour",
+      "copy": "Temps libre puis transfert vers l’aéroport."
+    }
+  ],
+  "body": {
+    "type": "root",
+    "children": [
+      {
+        "type": "p",
+        "children": [
+          {
+            "type": "text",
+            "text": "Un séjour guidé et profondément humain pour comprendre l’histoire, parcourir la ville et transmettre la mémoire avec justesse."
+          }
+        ]
+      }
+    ]
+  },
+  "seo": {
+    "title": "Voyage à Cracovie — S Escapes",
+    "description": "Un séjour guidé et profondément humain pour découvrir Cracovie et transmettre la mémoire avec justesse.",
+    "image": "/images/dest-cracovie.jpg",
+    "noIndex": false
+  },
+  "name": "Cracovie",
+  "image": "/images/dest-cracovie.jpg",
+  "copy": "Un séjour guidé et profondément humain pour comprendre l’histoire, parcourir la ville et transmettre la mémoire avec justesse.",
+  "includes": [
+    "Vol aller-retour",
+    "Hébergement",
+    "Visite guidée",
+    "Transferts"
+  ]
+}

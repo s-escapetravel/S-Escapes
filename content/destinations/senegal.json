@@ -1,0 +1,29 @@
+{
+  "name": "Sénégal",
+  "slug": "senegal",
+  "status": "published",
+  "featured": true,
+  "order": 7,
+  "category": "culture",
+  "note": "La Teranga ♡",
+  "coords": "14.72° N · 17.47° O",
+  "price": "À partir de 990 €",
+  "duration": "Teranga & partage",
+  "subtitle": "Une terre de culture et de rencontres",
+  "copy": "Dakar, l’île de Gorée, le lac Rose et la Petite Côte dans un voyage chaleureux tourné vers les rencontres et le partage.",
+  "image": "/images/dest-senegal.jpg",
+  "secondaryImage": "/images/supporting-senegal.png",
+  "idealPeriod": "Novembre à mai",
+  "style": "Rencontres & culture",
+  "includes": ["Vol aller-retour", "Hébergements", "Transferts privés", "Expériences"],
+  "prepare": ["Passeport valide", "Conseils de santé voyage", "Bagage souple"],
+  "itinerary": [
+    { "title": "Dakar", "copy": "Accueil et immersion dans la capitale." },
+    { "title": "Île de Gorée", "copy": "Mémoire, patrimoine et traversée maritime." },
+    { "title": "Lac Rose", "copy": "Paysages singuliers et savoir-faire locaux." },
+    { "title": "Petite Côte", "copy": "Villages, marchés et moments de partage." },
+    { "title": "Au revoir Sénégal", "copy": "Dernière matinée et transfert retour." }
+  ],
+  "alternatives": [{ "destination": "content/destinations/bali.json" }, { "destination": "content/destinations/cracovie.json" }],
+  "seo": { "title": "Voyage au Sénégal — S Escapes", "description": "Dakar, Gorée, le lac Rose et la Petite Côte dans un voyage tourné vers les rencontres et le partage.", "image": "/images/dest-senegal.jpg", "noIndex": false }
+}

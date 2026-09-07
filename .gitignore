@@ -1,15 +1,19 @@
+node_modules/
+dist/
+.astro/
 .netlify/
 .firebase/
 .firebaserc
 .claude/
-node_modules/
-dist/
+firebase-debug*
+firebase.json
+design/
+package 2.json
+public/sitemap 2.xml
 public/admin/
 tina/__generated__/
-firebase-debug*.log
-firebase.json
 .DS_Store
-design/
 .env
 .env.*
 !.env.example
+

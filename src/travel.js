@@ -1,7 +1,6 @@
-import { trips } from './trip-data.js'
-import { advisor, recentStories, testimonial } from './editorial-data.js'
 import { createLeadPayload, responsePromise, setSubmitting, showLeadError, showLeadResult, submitLead } from './lead-service.js'
-import { approvedReviews, bindReviewForm } from './review-service.js'
+
+const trips = window.S_ESCAPES_TRIPS || []
 
 const qs = (selector, root = document) => root.querySelector(selector)
 const qsa = (selector, root = document) => [...root.querySelectorAll(selector)]
@@ -35,11 +34,11 @@ const renderBoard = (filter = 'all') => {
     return
   }
   const tripTile = (trip, index, variant = '') => `
-    <a class="atlas-trip ${variant}" href="/voyages/${trip.slug}.html">
-      <img src="${trip.image}" alt="${trip.name} — ${trip.note}" loading="lazy" />
+    <a class="atlas-trip ${variant}" href="/voyages/${trip.slug}">
+      <img src="${trip.coverImage || trip.image}" alt="${trip.title || trip.name} — ${trip.note || trip.destination || ''}" loading="lazy" />
       <span class="atlas-shade" aria-hidden="true"></span>
       <span class="atlas-no">${String(index + 1).padStart(2, '0')}</span>
-      <span class="atlas-copy"><strong>${trip.name}</strong><em>${trip.price}</em></span>
+      <span class="atlas-copy"><strong>${trip.title || trip.name}</strong><em>${trip.price}</em></span>
       <span class="atlas-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" /></svg></span>
     </a>`
   const [lead, ...following] = filtered
@@ -160,72 +159,6 @@ qsa('[data-open-planner]').forEach(button => button.addEventListener('click', ()
   openModal(plannerModal)
 }))
 
-const reviewModal = qs('[data-review-modal]')
-const reviewForm = qs('[data-review-form]')
-qsa('[data-open-review]').forEach(button => button.addEventListener('click', () => {
-  reviewForm.hidden = false
-  qs('[data-review-success]', reviewModal).hidden = true
-  qs('.form-status', reviewForm).textContent = ''
-  openModal(reviewModal)
-  qs('[name="name"]', reviewForm)?.focus()
-}))
-bindReviewForm({
-  form: reviewForm,
-  onSuccess: () => {
-    reviewForm.hidden = true
-    qs('[data-review-success]', reviewModal).hidden = false
-  }
-})
-
-/* ---------- editorial proof ---------- */
-const stories = qs('[data-stories]')
-if (stories) {
-  stories.innerHTML = recentStories.map((story, index) => `
-    <a class="story-card" href="${story.href}">
-      <figure><img src="${story.image}" alt="${story.alt}" loading="lazy" /><figcaption>${String(index + 1).padStart(2, '0')}</figcaption></figure>
-      <span class="story-place">${story.destination}</span>
-      <strong>${story.title}</strong>
-      <small>${story.copy}</small>
-      <span class="story-link">Lire le carnet <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" /></svg></span>
-    </a>`).join('')
-}
-const advisorBlock = qs('[data-advisor]')
-if (advisorBlock) {
-  qs('.sect-label', advisorBlock).textContent = advisor.eyebrow
-  qs('h2', advisorBlock).textContent = advisor.name
-  qs('.advisor-role', advisorBlock).textContent = advisor.role
-  qs('blockquote', advisorBlock).textContent = `« ${advisor.note} »`
-}
-const testimonialBlock = qs('[data-testimonial]')
-const renderTestimonial = item => {
-  if (!testimonialBlock || !item) return
-  testimonialBlock.replaceChildren()
-  if (item.photos?.[0]) {
-    const figure = document.createElement('figure')
-    figure.className = 'testimonial-photo'
-    const photo = document.createElement('img')
-    photo.src = item.photos[0]
-    photo.alt = `Souvenir de voyage partagé par ${item.author}`
-    photo.loading = 'lazy'
-    figure.append(photo)
-    testimonialBlock.append(figure)
-  }
-  const quoteMark = document.createElement('span')
-  quoteMark.setAttribute('aria-hidden', 'true')
-  quoteMark.textContent = '“'
-  const quote = document.createElement('blockquote')
-  quote.textContent = item.quote
-  const author = document.createElement('p')
-  author.append(document.createTextNode(item.author))
-  const trip = document.createElement('small')
-  trip.textContent = item.trip
-  author.append(trip)
-  testimonialBlock.append(quoteMark, quote, author)
-}
-renderTestimonial(testimonial)
-approvedReviews().then(reviews => {
-  if (reviews.length) renderTestimonial(reviews[0])
-}).catch(() => {})
 qsa('.proof .reveal, .carnets .reveal, .advisor .reveal').forEach(element => element.classList.add('is-visible'))
 qsa('[data-close-modal]').forEach(button => button.addEventListener('click', () => closeModal(button.closest('dialog'))))
 qsa('dialog').forEach(dialog => dialog.addEventListener('click', event => {

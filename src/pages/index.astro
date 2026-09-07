@@ -1,0 +1,193 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import SectionHeading from '../components/SectionHeading.astro'
+import { featuredTrips, homePage, siteSettings, stories } from '../lib/content'
+import '../travel.css'
+
+const home = homePage
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'TravelAgency',
+  name: siteSettings.brandName,
+  url: siteSettings.siteUrl,
+  email: siteSettings.contact.email,
+  telephone: siteSettings.contact.phoneHref,
+  description: home.seo.description
+}
+const boardTrips = featuredTrips.map(trip => ({
+  name: trip.title || trip.name,
+  title: trip.title || trip.name,
+  slug: trip.slug,
+  note: trip.note || trip.destination,
+  destination: trip.destination,
+  category: trip.category,
+  price: trip.price,
+  duration: trip.duration,
+  image: trip.coverImage || trip.image,
+  coverImage: trip.coverImage || trip.image
+}))
+---
+
+<BaseLayout title={home.seo.title} description={home.seo.description} image={home.seo.image} noIndex={home.seo.noIndex} schema={organizationSchema}>
+  <Header />
+  <main id="contenu">
+    <div class="route-thread" aria-hidden="true"><span></span></div>
+    <section class="cover" id="haut">
+      <picture class="cover-photo" aria-hidden="true">
+        {home.hero.imageMobile && <source srcset={home.hero.imageMobile} media="(max-width: 720px)" />}
+        <img src={home.hero.image} alt="" fetchpriority="high" width="1376" height="768" />
+      </picture>
+      <div class="cover-inner">
+        <h1><span class="line">{home.hero.heading}</span><span class="line line--accent">{home.hero.headingAccent}</span></h1>
+        <p class="cover-sub">{home.hero.intro}</p>
+        <div class="cover-actions">
+          <a class="pill pill--solid" href="#departs">{home.hero.primaryCta}</a>
+          <a class="pill" href="#atelier">{home.hero.secondaryCta}</a>
+          <span class="cover-note hand">{home.hero.note}</span>
+        </div>
+      </div>
+      <div class="cover-polaroids" aria-hidden="true">
+        {home.hero.polaroids.map(polaroid => <figure class="polaroid" data-tilt><img src={polaroid.image} alt="" loading="lazy" /><figcaption>{polaroid.caption}</figcaption></figure>)}
+      </div>
+      <div class="stamp" aria-hidden="true">
+        <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="58" /><defs><path id="stamp-arc" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" /></defs><text><textPath href="#stamp-arc">{home.hero.stamp}</textPath></text></svg>
+        <span class="stamp-core">✈</span>
+      </div>
+      <div class="cover-strip" aria-hidden="true"><span>{home.hero.stripLeft}</span><span class="strip-route"><b></b></span><span>{home.hero.stripRight}</span></div>
+    </section>
+
+    <section class="manifest" id="departs">
+      <header class="sect-head reveal">
+        <SectionHeading section={home.departures} />
+        <div class="filters" role="group" aria-label="Filtrer les destinations">
+          <button class="is-active" type="button" data-filter="all">Toutes</button>
+          <button type="button" data-filter="soleil">Soleil</button>
+          <button type="button" data-filter="culture">Culture</button>
+          <button type="button" data-filter="nature">Nature</button>
+        </div>
+      </header>
+      <div class="board reveal" data-board></div>
+      <p class="board-note reveal">{home.departures.budgetNote}</p>
+    </section>
+
+    <section class="atelier" id="atelier">
+      <div class="atelier-copy reveal">
+        <SectionHeading section={home.atelier} />
+        <p class="lede">{home.atelier.intro}</p>
+        <button class="pill pill--solid" type="button" data-open-planner>{home.atelier.cta}</button>
+        <span class="hand hand--gold">{home.atelier.note}</span>
+      </div>
+      <ol class="atelier-steps reveal" aria-label="Notre accompagnement">
+        {home.atelier.steps.map((step, index) => <li><span>{String(index + 1).padStart(2, '0')}</span><div><strong>{step.title}</strong><small>{step.description}</small></div></li>)}
+      </ol>
+    </section>
+
+    <section class="sacred" aria-labelledby="sacred-title">
+      <figure class="sacred-photo reveal" aria-hidden="true"><img src={home.spiritualPromo.image} alt="" loading="lazy" /></figure>
+      <div class="sacred-copy reveal">
+        <SectionHeading section={home.spiritualPromo} id="sacred-title" />
+        <p class="lede">{home.spiritualPromo.intro}</p>
+        <a class="pill" href="/hajj-omra">{home.spiritualPromo.cta}</a>
+      </div>
+    </section>
+
+    <section class="maison" id="maison">
+      <div class="maison-copy reveal">
+        <SectionHeading section={home.approach} />
+        <p class="lede">{home.approach.intro}</p>
+        <ul class="maison-list">{home.approach.points.map(point => <li>{point}</li>)}</ul>
+      </div>
+      <figure class="maison-photo polaroid reveal" data-tilt><img src={home.approach.image} alt={home.approach.imageAlt} loading="lazy" /><figcaption>{home.approach.caption}</figcaption></figure>
+    </section>
+
+    <section class="proof" aria-labelledby="proof-title">
+      <div class="proof-intro reveal"><SectionHeading section={home.proof} id="proof-title" /></div>
+      <ol class="proof-list reveal">
+        {home.proof.items.map((item, index) => <li><span>{String(index + 1).padStart(2, '0')}</span><div><h3>{item.title}</h3><p>{item.copy}</p></div></li>)}
+      </ol>
+    </section>
+
+    <section class="carnets" aria-labelledby="carnets-title">
+      <header class="carnets-head reveal"><SectionHeading section={home.storiesIntro} id="carnets-title" /><p class="lede">{home.storiesIntro.intro}</p></header>
+      <div class="story-rail reveal" data-stories>
+        {stories.map((story, index) => (
+          <a class="story-card" href={story.href}>
+            <figure><img src={story.image} alt={story.alt} loading="lazy" /><figcaption>{String(index + 1).padStart(2, '0')}</figcaption></figure>
+            <span class="story-place">{story.destination}</span><strong>{story.title}</strong><small>{story.copy}</small>
+            <span class="story-link">Lire le carnet <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" /></svg></span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="advisor" aria-labelledby="advisor-title">
+      <div class="advisor-note reveal" data-advisor><p class="sect-label">{home.advisor.label}</p><h2 id="advisor-title">{home.advisor.name}</h2><p class="advisor-role">{home.advisor.role}</p><blockquote>« {home.advisor.quote} »</blockquote></div>
+      {home.testimonial.published && <aside class="testimonial reveal" data-testimonial aria-label="Témoignage voyageur"><span aria-hidden="true">“</span><blockquote>{home.testimonial.quote}</blockquote><p>{home.testimonial.author}<small>{home.testimonial.trip}</small></p></aside>}
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-copy reveal">
+        <SectionHeading section={home.contact} />
+        <p class="lede">{home.contact.intro}</p><p class="response-promise" data-response-promise hidden></p>
+        <div class="contact-direct">
+          <a href={`tel:${siteSettings.contact.phoneHref}`}>{siteSettings.contact.phoneDisplay}</a>
+          <a href={`mailto:${siteSettings.contact.email}`}>{siteSettings.contact.email}</a>
+          {siteSettings.social.instagramUrl && <a href={siteSettings.social.instagramUrl} target="_blank" rel="noreferrer">Instagram — {siteSettings.social.instagramLabel}</a>}
+        </div>
+        <span class="hand">{home.contact.note}</span>
+      </div>
+      <form class="contact-form reveal" data-contact-form>
+        <label>Nom et prénom<input name="name" autocomplete="name" required /></label>
+        <label>E-mail<input name="email" type="email" autocomplete="email" required /></label>
+        <label>Téléphone<input name="phone" type="tel" autocomplete="tel" /></label>
+        <label>Votre projet<select name="project" required><option value="">Choisir</option><option>Voyage prêt à partir</option><option>Voyage sur mesure</option><option>Hajj ou Omra</option></select></label>
+        <label class="field-wide">Parlez-nous de vos envies<textarea name="message" rows="4" required></textarea></label>
+        <label class="consent field-wide"><input name="consent" type="checkbox" required /> J’accepte d’être recontacté(e) au sujet de mon projet et la <a href="/confidentialite">Politique de confidentialité</a>.</label>
+        <button class="pill pill--solid" type="submit">{home.contact.submitLabel}</button><p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+      <section class="form-success" data-form-success hidden aria-live="polite"><p class="sect-label">Demande bien reçue</p><h3>{home.contact.successTitle}</h3><p>{home.contact.successCopy} <span data-response-time></span></p></section>
+    </section>
+  </main>
+  <Footer />
+
+  <dialog class="modal planner-modal" data-planner-modal aria-labelledby="planner-title">
+    <button class="modal-close" type="button" data-close-modal aria-label="Fermer">×</button>
+    <div class="planner-layout">
+      <form data-planner-form novalidate>
+        <div class="planner-progress" aria-label="Progression"><span data-planner-progress>Étape 1 sur 3</span><i><b></b></i></div>
+        <fieldset data-step="1"><legend id="planner-title">Quel voyage vous ressemble&nbsp;?</legend><p class="planner-intro">Choisissez une ambiance. Vous pourrez préciser votre idée juste après.</p>
+          <div class="planner-choices">
+            <label class="planner-choice"><input type="radio" name="inspiration" value="Mer & soleil" required /><span><b>Mer &amp; soleil</b><small>Ralentir, nager, respirer.</small></span></label>
+            <label class="planner-choice"><input type="radio" name="inspiration" value="Nature & aventure" /><span><b>Nature &amp; aventure</b><small>Marcher, explorer, s’émerveiller.</small></span></label>
+            <label class="planner-choice"><input type="radio" name="inspiration" value="Culture & art de vivre" /><span><b>Culture &amp; art de vivre</b><small>Flâner, goûter, rencontrer.</small></span></label>
+            <label class="planner-choice"><input type="radio" name="inspiration" value="Je me laisse guider" /><span><b>Je me laisse guider</b><small>Une surprise bien pensée.</small></span></label>
+          </div>
+          <label class="planner-field">Une destination en tête&nbsp;?<input name="destination" autocomplete="off" placeholder="Ex. Japon, Italie… ou “à découvrir”" /></label>
+          <label class="planner-field">Un lien d’inspiration&nbsp;?<input name="inspirationUrl" type="url" inputmode="url" placeholder="Pinterest, Instagram, article…" /></label>
+        </fieldset>
+        <fieldset data-step="2" hidden><legend>Les contours du voyage</legend><p class="planner-intro">Quelques repères pour que notre première réponse soit déjà pertinente.</p>
+          <div class="planner-grid">
+            <label class="planner-field">Ville de départ<input name="departureCity" autocomplete="address-level2" placeholder="Ex. Paris, Lyon…" required /></label>
+            <label class="planner-field">Quand aimeriez-vous partir&nbsp;?<input name="dates" autocomplete="off" placeholder="Ex. printemps 2027" required /></label>
+            <label class="planner-field">Durée souhaitée<select name="duration" required><option value="">Choisir</option><option>Week-end prolongé</option><option>5 à 7 jours</option><option>8 à 12 jours</option><option>Deux semaines ou plus</option><option>Je suis flexible</option></select></label>
+            <label class="planner-field">Budget par personne<select name="budget" required><option value="">Choisir</option><option>Moins de 1 000 €</option><option>1 000 à 1 800 €</option><option>1 800 à 3 000 €</option><option>3 000 à 5 000 €</option><option>5 000 € et plus</option><option>À définir ensemble</option></select></label>
+            <label class="planner-field">Adultes<input name="adults" type="number" min="1" max="20" value="2" required /></label><label class="planner-field">Enfants<input name="children" type="number" min="0" max="10" value="0" /></label>
+          </div>
+          <p class="planner-question">Quel rythme vous fait envie&nbsp;?</p><div class="planner-pace"><input id="pace-slow" type="radio" name="pace" value="Lent & contemplatif" required /><label for="pace-slow"><span>Lent &amp; contemplatif</span></label><input id="pace-balanced" type="radio" name="pace" value="Équilibré" /><label for="pace-balanced"><span>Équilibré</span></label><input id="pace-curious" type="radio" name="pace" value="Dense & curieux" /><label for="pace-curious"><span>Dense &amp; curieux</span></label></div>
+        </fieldset>
+        <fieldset data-step="3" hidden><legend>À qui écrivons-nous&nbsp;?</legend><p class="planner-intro">Votre carnet est prêt. Ajoutez vos coordonnées et toute information qui compte pour vous.</p>
+          <div class="planner-grid"><label class="planner-field">Nom et prénom<input name="name" autocomplete="name" required /></label><label class="planner-field">E-mail<input name="email" type="email" autocomplete="email" required /></label><label class="planner-field">Téléphone<input name="phone" type="tel" autocomplete="tel" required /></label><label class="planner-field">Préférence de contact<select name="contactPreference" required><option value="">Choisir</option><option>E-mail</option><option>Appel téléphonique</option><option>WhatsApp</option></select></label><label class="planner-field">Créneau préféré<select name="contactTime" required><option value="">Choisir</option><option>Le matin</option><option>L’après-midi</option><option>En soirée</option><option>Selon vos disponibilités</option></select></label></div>
+          <label class="planner-field planner-message">Le détail qui fera la différence<textarea name="notes" rows="4" placeholder="Occasion particulière, hôtel rêvé, contraintes, envies à ne pas manquer…"></textarea></label><label class="consent planner-consent"><input type="checkbox" name="consent" required /> J’accepte d’être recontacté(e) au sujet de ce projet et la <a href="/confidentialite">Politique de confidentialité</a>.</label>
+        </fieldset>
+        <div class="planner-nav"><button class="pill" type="button" data-planner-back hidden>← Retour</button><button class="pill pill--solid" type="button" data-planner-next>Continuer →</button><button class="pill pill--solid" type="submit" data-planner-submit hidden>Envoyer mon carnet →</button></div><p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+      <section class="form-success form-success--planner" data-form-success hidden aria-live="polite"><p class="sect-label">Carnet bien reçu</p><h2>Votre voyage commence ici.</h2><p>Merci. Votre brief est entre les mains de notre équipe. <span data-response-time></span></p><button class="pill pill--solid" type="button" data-close-modal>Fermer</button></section>
+      <aside class="planner-side" aria-live="polite"><p class="sect-label">Votre carnet</p><h2>Le point de départ<br />d’un voyage <em>à vous</em>.</h2><dl class="planner-summary"><div><dt>Inspiration</dt><dd data-summary="inspiration">À imaginer</dd></div><div><dt>Destination</dt><dd data-summary="destination">À découvrir</dd></div><div><dt>Départ</dt><dd data-summary="dates">À définir</dd></div><div><dt>Voyageurs</dt><dd data-summary="travelers">2 adultes</dd></div><div><dt>Rythme</dt><dd data-summary="pace">À votre mesure</dd></div><div><dt>Budget</dt><dd data-summary="budget">À définir</dd></div></dl><p class="planner-side-note">Un brief structuré est préparé pour notre équipe, ainsi qu’un message de confirmation pour vous.</p></aside>
+    </div>
+  </dialog>
+
+  <script is:inline define:vars={{ boardTrips }}>window.S_ESCAPES_TRIPS = boardTrips</script>
+  <script>import '../travel.js'</script>
+</BaseLayout>

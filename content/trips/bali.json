@@ -1,0 +1,81 @@
+{
+  "title": "Bali",
+  "destination": "8.41° S · 115.19° E",
+  "location": "8.41° S · 115.19° E",
+  "price": "À partir de 999 €",
+  "duration": "Voyage complet",
+  "coverImage": "/images/dest-bali.jpg",
+  "description": "Rizières, temples, plages et gestes du quotidien balinais composent un voyage généreux, entre découverte et respiration.",
+  "highlights": [
+    "Vol aller-retour",
+    "Hébergements",
+    "Transferts",
+    "Excursions"
+  ],
+  "slug": "bali",
+  "status": "published",
+  "featured": true,
+  "order": 6,
+  "category": "soleil",
+  "note": "Le paradis à prix doux ♡",
+  "subtitle": "Le paradis à votre rythme",
+  "secondaryImage": "/images/supporting-bali.png",
+  "idealPeriod": "Mai à octobre",
+  "style": "Culture & respiration",
+  "prepare": [
+    "Passeport valide",
+    "Tenues légères",
+    "Adaptateur universel"
+  ],
+  "itinerary": [
+    {
+      "title": "Bienvenue à Bali",
+      "copy": "Accueil et installation dans le sud de l’île."
+    },
+    {
+      "title": "Ubud",
+      "copy": "Temples, artisanat et rizières en terrasses."
+    },
+    {
+      "title": "Bali intérieur",
+      "copy": "Cascades, villages et rencontres."
+    },
+    {
+      "title": "Parenthèse balnéaire",
+      "copy": "Plage, détente et activités au choix."
+    },
+    {
+      "title": "Derniers instants",
+      "copy": "Temps libre et transfert vers l’aéroport."
+    }
+  ],
+  "body": {
+    "type": "root",
+    "children": [
+      {
+        "type": "p",
+        "children": [
+          {
+            "type": "text",
+            "text": "Rizières, temples, plages et gestes du quotidien balinais composent un voyage généreux, entre découverte et respiration."
+          }
+        ]
+      }
+    ]
+  },
+  "seo": {
+    "title": "Voyage à Bali — S Escapes",
+    "description": "Rizières, temples et plages composent un voyage généreux à Bali, entre découverte et respiration.",
+    "image": "/images/dest-bali.jpg",
+    "noIndex": false
+  },
+  "name": "Bali",
+  "image": "/images/dest-bali.jpg",
+  "copy": "Rizières, temples, plages et gestes du quotidien balinais composent un voyage généreux, entre découverte et respiration.",
+  "includes": [
+    "Vol aller-retour",
+    "Hébergements",
+    "Transferts",
+    "Excursions"
+  ]
+}

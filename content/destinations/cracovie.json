@@ -1,0 +1,29 @@
+{
+  "name": "Cracovie",
+  "slug": "cracovie",
+  "status": "published",
+  "featured": true,
+  "order": 3,
+  "category": "culture",
+  "note": "Mémoire & histoire",
+  "coords": "50.06° N · 19.94° E",
+  "price": "À partir de 313 €",
+  "duration": "Mémoire & histoire",
+  "subtitle": "Un voyage de mémoire et d’histoire",
+  "copy": "Un séjour guidé et profondément humain pour comprendre l’histoire, parcourir la ville et transmettre la mémoire avec justesse.",
+  "image": "/images/dest-cracovie.jpg",
+  "secondaryImage": "/images/supporting-cracovie.png",
+  "idealPeriod": "Avril à octobre",
+  "style": "Culture & mémoire",
+  "includes": ["Vol aller-retour", "Hébergement", "Visite guidée", "Transferts"],
+  "prepare": ["Carte d’identité valide", "Tenue adaptée aux visites", "Temps de recueillement"],
+  "itinerary": [
+    { "title": "Arrivée à Cracovie", "copy": "Accueil et première découverte de la vieille ville." },
+    { "title": "Cœur historique", "copy": "Places, ruelles et patrimoine de Cracovie." },
+    { "title": "Mémoire", "copy": "Journée guidée consacrée à l’histoire." },
+    { "title": "Culture polonaise", "copy": "Quartiers, traditions et gastronomie locale." },
+    { "title": "Retour", "copy": "Temps libre puis transfert vers l’aéroport." }
+  ],
+  "alternatives": [{ "destination": "content/destinations/copenhague.json" }, { "destination": "content/destinations/senegal.json" }],
+  "seo": { "title": "Voyage à Cracovie — S Escapes", "description": "Un séjour guidé et profondément humain pour découvrir Cracovie et transmettre la mémoire avec justesse.", "image": "/images/dest-cracovie.jpg", "noIndex": false }
+}

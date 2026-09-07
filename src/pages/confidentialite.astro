@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import { legalPage as page, siteSettings } from '../lib/content'
+import '../travel.css'
+---
+
+<BaseLayout title={page.seo.title} description={page.seo.description} image={page.seo.image} noIndex={page.seo.noIndex}>
+  <Header />
+  <main id="contenu" class="legal-page">
+    <p class="sect-label"><i>Informations</i>Confidentialité</p>
+    <h1>{page.heading}<br /><em>{page.headingAccent}</em></h1>
+    <p class="legal-updated">Dernière mise à jour : {page.updatedAt}</p>
+    <div class="legal-copy">
+      {page.sections.map(section => <section><h2>{section.title}</h2><p>{section.body}</p></section>)}
+      <p class="legal-note">Pour exercer vos droits : <a href={`mailto:${siteSettings.organization.privacyEmail || siteSettings.contact.email}`}>{siteSettings.organization.privacyEmail || siteSettings.contact.email}</a>.</p>
+    </div>
+    <a class="pill pill--solid" href="/">Retour à S Escapes</a>
+  </main>
+  <Footer />
+  <script is:inline>
+    document.querySelectorAll('[data-year]').forEach(item => { item.textContent = new Date().getFullYear() })
+    const button = document.querySelector('.menu-toggle')
+    const nav = document.querySelector('.main-nav')
+    button?.addEventListener('click', () => {
+      const open = button.getAttribute('aria-expanded') === 'true'
+      button.setAttribute('aria-expanded', String(!open))
+      nav?.classList.toggle('is-open', !open)
+    })
+  </script>
+</BaseLayout>

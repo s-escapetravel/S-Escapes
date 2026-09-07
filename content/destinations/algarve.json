@@ -1,0 +1,29 @@
+{
+  "name": "Algarve",
+  "slug": "algarve",
+  "status": "published",
+  "featured": true,
+  "order": 8,
+  "category": "soleil",
+  "note": "Falaises dorées ♡",
+  "coords": "37.02° N · 7.94° O",
+  "price": "À partir de 399 €",
+  "duration": "Soleil & évasion",
+  "subtitle": "Le Portugal côté grand large",
+  "copy": "Falaises dorées, criques atlantiques et villages blancs : une semaine douce et lumineuse dans le sud du Portugal.",
+  "image": "/images/dest-algarve.png",
+  "secondaryImage": "/images/supporting-algarve.png",
+  "idealPeriod": "Avril à octobre",
+  "style": "Soleil & douceur de vivre",
+  "includes": ["Vol aller-retour", "Hébergement", "Transferts", "Carnet de voyage"],
+  "prepare": ["Protection solaire", "Chaussures de marche", "Maillot de bain"],
+  "itinerary": [
+    { "title": "Arrivée en Algarve", "copy": "Transfert et installation près de l’océan." },
+    { "title": "Côte spectaculaire", "copy": "Falaises, plages et sentiers panoramiques." },
+    { "title": "Villages du sud", "copy": "Marchés, ruelles blanches et gastronomie." },
+    { "title": "Journée libre", "copy": "Détente ou excursion selon vos envies." },
+    { "title": "Retour", "copy": "Dernier bain de lumière avant le départ." }
+  ],
+  "alternatives": [{ "destination": "content/destinations/tenerife.json" }, { "destination": "content/destinations/corse.json" }],
+  "seo": { "title": "Voyage en Algarve — S Escapes", "description": "Falaises dorées, criques atlantiques et villages blancs : découvrez l’Algarve avec S Escapes.", "image": "/images/dest-algarve.png", "noIndex": false }
+}

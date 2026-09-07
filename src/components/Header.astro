@@ -1,0 +1,43 @@
+---
+import { siteSettings } from '../lib/content'
+
+interface Props {
+  variant?: 'travel' | 'sacred' | 'destination'
+}
+
+const { variant = 'travel' } = Astro.props
+const sacred = variant === 'sacred'
+const destination = variant === 'destination'
+const navigation = sacred
+  ? [
+      { label: 'Le parcours', href: '#chemin' },
+      { label: 'Préparer mon Hajj', href: '#hajj' },
+      { label: 'Nos formules', href: '#formules' },
+      { label: 'Nos voyages', href: '/', return: true },
+      { label: 'Être rappelé', href: '#rappel', highlight: true }
+    ]
+  : destination
+    ? [
+        { label: 'Départs', href: '/#departs', number: '01' },
+        { label: 'Sur mesure', href: '/#atelier', number: '02' },
+        { label: 'Hajj & Omra', href: '/hajj-omra', number: '03' },
+        { label: 'Recevoir le programme', href: '#contact-voyage', highlight: true }
+      ]
+    : siteSettings.navigation
+---
+
+<header class:list={['topbar', variant === 'travel' ? null : '']} data-header>
+  <a class="wordmark" href={sacred ? '/' : variant === 'travel' ? '#haut' : '/'} aria-label={`${siteSettings.brandName}, accueil`}>
+    S&nbsp;Escapes<sup>{sacred ? 'Hajj & Omra' : '®'}</sup>
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+    <span></span><span></span>
+  </button>
+  <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+    {navigation.map((item: any) => (
+      <a class:list={[item.highlight && 'pill pill--solid', item.return && 'nav-return']} href={item.href}>
+        {item.number && <i>{item.number}</i>}{item.label}
+      </a>
+    ))}
+  </nav>
+</header>

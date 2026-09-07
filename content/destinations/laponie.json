@@ -1,0 +1,29 @@
+{
+  "name": "Laponie",
+  "slug": "laponie",
+  "status": "published",
+  "featured": true,
+  "order": 1,
+  "category": "nature",
+  "note": "Sous les aurores boréales ✨",
+  "coords": "66.50° N · 25.73° E",
+  "price": "À partir de 899 €",
+  "duration": "Séjour hivernal",
+  "subtitle": "L’aventure au cœur du Grand Nord",
+  "copy": "Aurores boréales, forêts enneigées et expériences arctiques dans un voyage pensé pour vous faire vivre le Grand Nord sans rien laisser au hasard.",
+  "image": "/images/dest-laponie.jpg",
+  "secondaryImage": "/images/dest-alpes.jpg",
+  "idealPeriod": "Décembre à mars",
+  "style": "Nature & aventure",
+  "includes": ["Vol aller-retour", "Hébergement sélectionné", "Transferts", "Activités au choix"],
+  "prepare": ["Vêtements grand froid", "Chaussures adaptées", "Assurance voyage"],
+  "itinerary": [
+    { "title": "Arrivée en Laponie", "copy": "Accueil et installation dans votre hébergement." },
+    { "title": "Aventure arctique", "copy": "Safari en traîneau et exploration de la nature." },
+    { "title": "Aurores boréales", "copy": "Soirée guidée et observation sous les étoiles." },
+    { "title": "Liberté & découverte", "copy": "Activités au choix et temps pour vous." },
+    { "title": "Au revoir, Grand Nord", "copy": "Retour avec des souvenirs plein la tête." }
+  ],
+  "alternatives": [{ "destination": "content/destinations/copenhague.json" }, { "destination": "content/destinations/corse.json" }],
+  "seo": { "title": "Voyage en Laponie — S Escapes", "description": "Aurores boréales, forêts enneigées et expériences arctiques : découvrez la Laponie avec S Escapes.", "image": "/images/dest-laponie.jpg", "noIndex": false }
+}

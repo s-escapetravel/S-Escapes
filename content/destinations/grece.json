@@ -1,0 +1,29 @@
+{
+  "name": "Grèce",
+  "slug": "grece",
+  "status": "published",
+  "featured": true,
+  "order": 9,
+  "category": "soleil",
+  "note": "Eaux turquoise ♡",
+  "coords": "37.79° N · 20.90° E",
+  "price": "À partir de 499 €",
+  "duration": "Zakynthos",
+  "subtitle": "Une semaine au bleu",
+  "copy": "Criques turquoise, villages insulaires et douceur méditerranéenne dans une échappée pensée pour ralentir et respirer.",
+  "image": "/images/dest-santorini.jpg",
+  "secondaryImage": "/images/supporting-grece.png",
+  "idealPeriod": "Mai à octobre",
+  "style": "Île & détente",
+  "includes": ["Vol aller-retour", "Hôtel", "Transferts", "Assistance"],
+  "prepare": ["Protection solaire", "Maillot de bain", "Bagage cabine ou soute"],
+  "itinerary": [
+    { "title": "Cap sur Zakynthos", "copy": "Arrivée, accueil et installation." },
+    { "title": "Baies turquoise", "copy": "Découverte des criques emblématiques." },
+    { "title": "L’île intérieure", "copy": "Villages, oliveraies et traditions." },
+    { "title": "Mer & liberté", "copy": "Journée au choix entre bateau et détente." },
+    { "title": "Dernier horizon", "copy": "Temps libre avant le vol retour." }
+  ],
+  "alternatives": [{ "destination": "content/destinations/algarve.json" }, { "destination": "content/destinations/bali.json" }],
+  "seo": { "title": "Voyage en Grèce — S Escapes", "description": "Criques turquoise, villages insulaires et douceur méditerranéenne : découvrez Zakynthos avec S Escapes.", "image": "/images/dest-santorini.jpg", "noIndex": false }
+}

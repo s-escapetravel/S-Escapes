@@ -1,0 +1,81 @@
+{
+  "title": "Copenhague",
+  "destination": "55.68° N · 12.57° E",
+  "location": "55.68° N · 12.57° E",
+  "price": "À partir de 299 €",
+  "duration": "City break",
+  "coverImage": "/images/dest-copenhague.jpg",
+  "description": "Canaux, design, gastronomie et quartiers vivants : une escapade équilibrée pour découvrir Copenhague à votre rythme.",
+  "highlights": [
+    "Vol aller-retour",
+    "Hôtel central",
+    "Carnet d’adresses",
+    "Assistance"
+  ],
+  "slug": "copenhague",
+  "status": "published",
+  "featured": true,
+  "order": 2,
+  "category": "culture",
+  "note": "Douceur scandinave ♡",
+  "subtitle": "La douceur de vivre scandinave",
+  "secondaryImage": "/images/supporting-copenhague.png",
+  "idealPeriod": "Avril à octobre",
+  "style": "Culture & art de vivre",
+  "prepare": [
+    "Carte d’identité valide",
+    "Chaussures confortables",
+    "Réservations souhaitées"
+  ],
+  "itinerary": [
+    {
+      "title": "Premiers pas",
+      "copy": "Installation et découverte du centre historique."
+    },
+    {
+      "title": "Copenhague créative",
+      "copy": "Design, architecture et adresses confidentielles."
+    },
+    {
+      "title": "Au fil des canaux",
+      "copy": "Balade sur l’eau et quartiers emblématiques."
+    },
+    {
+      "title": "Hygge & gastronomie",
+      "copy": "Marchés, cafés et temps libre."
+    },
+    {
+      "title": "Dernière promenade",
+      "copy": "Un dernier regard sur la ville avant le retour."
+    }
+  ],
+  "body": {
+    "type": "root",
+    "children": [
+      {
+        "type": "p",
+        "children": [
+          {
+            "type": "text",
+            "text": "Canaux, design, gastronomie et quartiers vivants : une escapade équilibrée pour découvrir Copenhague à votre rythme."
+          }
+        ]
+      }
+    ]
+  },
+  "seo": {
+    "title": "Voyage à Copenhague — S Escapes",
+    "description": "Canaux, design et gastronomie : découvrez Copenhague à votre rythme avec S Escapes.",
+    "image": "/images/dest-copenhague.jpg",
+    "noIndex": false
+  },
+  "name": "Copenhague",
+  "image": "/images/dest-copenhague.jpg",
+  "copy": "Canaux, design, gastronomie et quartiers vivants : une escapade équilibrée pour découvrir Copenhague à votre rythme.",
+  "includes": [
+    "Vol aller-retour",
+    "Hôtel central",
+    "Carnet d’adresses",
+    "Assistance"
+  ]
+}

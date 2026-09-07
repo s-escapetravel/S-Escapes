@@ -162,12 +162,6 @@
           <blockquote></blockquote>
         </div>
         <aside class="testimonial reveal" data-testimonial aria-label="Témoignage voyageur"></aside>
-        <div class="review-invite reveal">
-          <p class="sect-label">Vous êtes parti(e) avec nous&nbsp;?</p>
-          <h3>Votre souvenir peut inspirer le prochain voyage.</h3>
-          <p>Partagez votre expérience en quelques instants. Votre avis est relu par notre équipe avant toute publication.</p>
-          <button class="text-link review-invite__cta" type="button" data-open-review>Partager mon expérience <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" /></svg></button>
-        </div>
       </section>
 
       <section class="contact" id="contact">
@@ -295,49 +289,6 @@
           </dl>
           <p class="planner-side-note">Un brief structuré est préparé pour notre équipe, ainsi qu’un message de confirmation pour vous.</p>
         </aside>
-      </div>
-    </dialog>
-
-    <dialog class="modal review-modal" data-review-modal aria-labelledby="review-title">
-      <button class="modal-close" type="button" data-close-modal aria-label="Fermer">×</button>
-      <div class="review-layout">
-        <section class="review-intro">
-          <p class="sect-label">Après le voyage</p>
-          <h2>Racontez-nous<br />ce qui vous a <em>marqué</em>.</h2>
-          <p>Votre retour aide notre équipe à rester attentive à chaque détail. Les avis ne sont publiés qu’après validation.</p>
-          <ul>
-            <li>Votre e-mail reste privé.</li>
-            <li>Ajoutez jusqu’à trois souvenirs en photo.</li>
-            <li>Vous gardez le dernier mot sur leur publication.</li>
-          </ul>
-        </section>
-        <form class="review-form" data-review-form novalidate>
-          <p class="form-kicker">Votre avis</p>
-          <label>Nom ou prénom à afficher<input name="name" autocomplete="name" maxlength="80" required /></label>
-          <label>E-mail <small>Privé — pour vérifier votre retour.</small><input name="email" type="email" autocomplete="email" maxlength="160" required /></label>
-          <label>Votre voyage<select name="trip" required><option value="">Choisir</option><option>Voyage sur mesure</option><option>Voyage prêt à partir</option><option>Hajj ou Omra</option><option>Autre expérience S Escapes</option></select></label>
-          <fieldset class="rating-fieldset">
-            <legend>Votre expérience</legend>
-            <div class="rating-options">
-              <label><input type="radio" name="rating" value="5" required /><span>5<small>Inoubliable</small></span></label>
-              <label><input type="radio" name="rating" value="4" /><span>4<small>Très belle</small></span></label>
-              <label><input type="radio" name="rating" value="3" /><span>3<small>Bonne</small></span></label>
-            </div>
-          </fieldset>
-          <label>Votre souvenir<textarea name="message" rows="5" minlength="30" maxlength="1600" placeholder="Le moment, l’adresse ou l’attention qui a fait la différence…" required></textarea></label>
-          <label class="review-upload">Quelques photos <small>JPG, PNG ou WebP · 3 maximum</small><input name="photos" type="file" accept="image/jpeg,image/png,image/webp" multiple /></label>
-          <div class="review-previews" data-review-previews aria-live="polite"></div>
-          <label class="consent review-photo-consent" hidden data-photo-consent><input name="photoConsent" type="checkbox" /> J’autorise S Escapes à publier les photos jointes avec mon avis, si celui-ci est validé.</label>
-          <label class="consent"><input name="consent" type="checkbox" required /> J’accepte que S Escapes utilise mon avis après validation et j’ai lu la <a href="/confidentialite.html">Politique de confidentialité</a>.</label>
-          <button class="pill pill--solid" type="submit">Envoyer mon avis <span aria-hidden="true">→</span></button>
-          <p class="form-status" role="status" aria-live="polite"></p>
-        </form>
-        <section class="form-success form-success--review" data-review-success hidden aria-live="polite">
-          <p class="sect-label">Merci pour ce partage</p>
-          <h2>Votre souvenir est bien arrivé.</h2>
-          <p>Notre équipe va le relire avec attention avant toute publication.</p>
-          <button class="pill pill--solid" type="button" data-close-modal>Fermer</button>
-        </section>
       </div>
     </dialog>
 

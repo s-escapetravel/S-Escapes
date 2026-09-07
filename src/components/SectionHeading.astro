@@ -1,0 +1,16 @@
+---
+interface Props {
+  section: {
+    number?: string
+    label?: string
+    heading: string
+    headingAccent: string
+  }
+  id?: string
+}
+
+const { section, id } = Astro.props
+---
+
+<p class="sect-label">{section.number && <i>{section.number}</i>}{section.label}</p>
+<h2 id={id}>{section.heading}<br /><em>{section.headingAccent}</em></h2>

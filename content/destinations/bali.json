@@ -1,0 +1,29 @@
+{
+  "name": "Bali",
+  "slug": "bali",
+  "status": "published",
+  "featured": true,
+  "order": 6,
+  "category": "soleil",
+  "note": "Le paradis à prix doux ♡",
+  "coords": "8.41° S · 115.19° E",
+  "price": "À partir de 999 €",
+  "duration": "Voyage complet",
+  "subtitle": "Le paradis à votre rythme",
+  "copy": "Rizières, temples, plages et gestes du quotidien balinais composent un voyage généreux, entre découverte et respiration.",
+  "image": "/images/dest-bali.jpg",
+  "secondaryImage": "/images/supporting-bali.png",
+  "idealPeriod": "Mai à octobre",
+  "style": "Culture & respiration",
+  "includes": ["Vol aller-retour", "Hébergements", "Transferts", "Excursions"],
+  "prepare": ["Passeport valide", "Tenues légères", "Adaptateur universel"],
+  "itinerary": [
+    { "title": "Bienvenue à Bali", "copy": "Accueil et installation dans le sud de l’île." },
+    { "title": "Ubud", "copy": "Temples, artisanat et rizières en terrasses." },
+    { "title": "Bali intérieur", "copy": "Cascades, villages et rencontres." },
+    { "title": "Parenthèse balnéaire", "copy": "Plage, détente et activités au choix." },
+    { "title": "Derniers instants", "copy": "Temps libre et transfert vers l’aéroport." }
+  ],
+  "alternatives": [{ "destination": "content/destinations/senegal.json" }, { "destination": "content/destinations/grece.json" }],
+  "seo": { "title": "Voyage à Bali — S Escapes", "description": "Rizières, temples et plages composent un voyage généreux à Bali, entre découverte et respiration.", "image": "/images/dest-bali.jpg", "noIndex": false }
+}

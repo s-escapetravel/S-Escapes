@@ -1,0 +1,81 @@
+{
+  "title": "Tenerife",
+  "destination": "28.29° N · 16.63° O",
+  "location": "28.29° N · 16.63° O",
+  "price": "À partir de 599 €",
+  "duration": "Îles Canaries",
+  "coverImage": "/images/dest-canaries.jpg",
+  "description": "Plages, paysages volcaniques et villages insulaires réunis dans une échappée lumineuse, personnalisable selon vos envies.",
+  "highlights": [
+    "Vol aller-retour",
+    "Hébergement",
+    "Transferts",
+    "Activités sur mesure"
+  ],
+  "slug": "tenerife",
+  "status": "published",
+  "featured": true,
+  "order": 4,
+  "category": "soleil",
+  "note": "L’été toute l’année ☀",
+  "subtitle": "Le grand air au rythme de l’Atlantique",
+  "secondaryImage": "/images/supporting-tenerife.png",
+  "idealPeriod": "Toute l’année",
+  "style": "Soleil & grands espaces",
+  "prepare": [
+    "Protection solaire",
+    "Chaussures de marche",
+    "Option bagage en soute"
+  ],
+  "itinerary": [
+    {
+      "title": "Cap sur Tenerife",
+      "copy": "Arrivée, transfert et installation."
+    },
+    {
+      "title": "Terres volcaniques",
+      "copy": "Exploration du Teide et de ses paysages."
+    },
+    {
+      "title": "Océan Atlantique",
+      "copy": "Journée en mer ou détente sur la côte."
+    },
+    {
+      "title": "L’île autrement",
+      "copy": "Villages, gastronomie et expériences au choix."
+    },
+    {
+      "title": "Derniers rayons",
+      "copy": "Matinée libre avant le retour."
+    }
+  ],
+  "body": {
+    "type": "root",
+    "children": [
+      {
+        "type": "p",
+        "children": [
+          {
+            "type": "text",
+            "text": "Plages, paysages volcaniques et villages insulaires réunis dans une échappée lumineuse, personnalisable selon vos envies."
+          }
+        ]
+      }
+    ]
+  },
+  "seo": {
+    "title": "Voyage à Tenerife — S Escapes",
+    "description": "Plages, paysages volcaniques et villages insulaires : découvrez Tenerife avec S Escapes.",
+    "image": "/images/dest-canaries.jpg",
+    "noIndex": false
+  },
+  "name": "Tenerife",
+  "image": "/images/dest-canaries.jpg",
+  "copy": "Plages, paysages volcaniques et villages insulaires réunis dans une échappée lumineuse, personnalisable selon vos envies.",
+  "includes": [
+    "Vol aller-retour",
+    "Hébergement",
+    "Transferts",
+    "Activités sur mesure"
+  ]
+}

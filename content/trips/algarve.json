@@ -1,0 +1,81 @@
+{
+  "title": "Algarve",
+  "destination": "37.02° N · 7.94° O",
+  "location": "37.02° N · 7.94° O",
+  "price": "À partir de 399 €",
+  "duration": "Soleil & évasion",
+  "coverImage": "/images/dest-algarve.png",
+  "description": "Falaises dorées, criques atlantiques et villages blancs : une semaine douce et lumineuse dans le sud du Portugal.",
+  "highlights": [
+    "Vol aller-retour",
+    "Hébergement",
+    "Transferts",
+    "Carnet de voyage"
+  ],
+  "slug": "algarve",
+  "status": "published",
+  "featured": true,
+  "order": 8,
+  "category": "soleil",
+  "note": "Falaises dorées ♡",
+  "subtitle": "Le Portugal côté grand large",
+  "secondaryImage": "/images/supporting-algarve.png",
+  "idealPeriod": "Avril à octobre",
+  "style": "Soleil & douceur de vivre",
+  "prepare": [
+    "Protection solaire",
+    "Chaussures de marche",
+    "Maillot de bain"
+  ],
+  "itinerary": [
+    {
+      "title": "Arrivée en Algarve",
+      "copy": "Transfert et installation près de l’océan."
+    },
+    {
+      "title": "Côte spectaculaire",
+      "copy": "Falaises, plages et sentiers panoramiques."
+    },
+    {
+      "title": "Villages du sud",
+      "copy": "Marchés, ruelles blanches et gastronomie."
+    },
+    {
+      "title": "Journée libre",
+      "copy": "Détente ou excursion selon vos envies."
+    },
+    {
+      "title": "Retour",
+      "copy": "Dernier bain de lumière avant le départ."
+    }
+  ],
+  "body": {
+    "type": "root",
+    "children": [
+      {
+        "type": "p",
+        "children": [
+          {
+            "type": "text",
+            "text": "Falaises dorées, criques atlantiques et villages blancs : une semaine douce et lumineuse dans le sud du Portugal."
+          }
+        ]
+      }
+    ]
+  },
+  "seo": {
+    "title": "Voyage en Algarve — S Escapes",
+    "description": "Falaises dorées, criques atlantiques et villages blancs : découvrez l’Algarve avec S Escapes.",
+    "image": "/images/dest-algarve.png",
+    "noIndex": false
+  },
+  "name": "Algarve",
+  "image": "/images/dest-algarve.png",
+  "copy": "Falaises dorées, criques atlantiques et villages blancs : une semaine douce et lumineuse dans le sud du Portugal.",
+  "includes": [
+    "Vol aller-retour",
+    "Hébergement",
+    "Transferts",
+    "Carnet de voyage"
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "pageName": "Accueil",
+  "seo": {
+    "title": "S Escapes — Le monde, à votre manière",
+    "description": "Voyages pensés, séjours personnalisés et accompagnement de chaque instant.",
+    "image": "/images/hero-travel.jpg",
+    "noIndex": false
+  },
+  "hero": {
+    "heading": "Le monde,",
+    "headingAccent": "à votre manière.",
+    "intro": "Séjours prêts à partir, itinéraires dessinés pour vous, Hajj & Omra préparés avec soin. Vous rêvez, nous orchestrons.",
+    "image": "/images/hero-travel.webp",
+    "imageMobile": "/images/hero-travel-mobile.webp",
+    "primaryCta": "Voir les départs",
+    "secondaryCta": "Imaginer mon voyage",
+    "note": "On s’occupe de tout, vous profitez !",
+    "polaroids": [
+      {
+        "image": "/images/dest-corse.jpg",
+        "caption": "Road trip en Corse ♡"
+      },
+      {
+        "image": "/images/dest-bali.jpg",
+        "caption": "Le paradis à prix doux ♡"
+      }
+    ],
+    "stripLeft": "Au départ de vos envies",
+    "stripRight": "Prochaine escale : la vôtre",
+    "stamp": "Déjà fait & approuvé · S Escapes ·"
+  },
+  "departures": {
+    "number": "01",
+    "label": "Index des départs",
+    "heading": "Neuf échappées,",
+    "headingAccent": "prêtes à embarquer.",
+    "emptyMessage": "Aucun départ dans cette catégorie pour le moment — parlez-nous de votre envie, nous la dessinerons.",
+    "budgetNote": "Budgets indicatifs établis d’après les dernières brochures — chaque projet est affiné avant réservation."
+  },
+  "atelier": {
+    "number": "02",
+    "label": "L’atelier sur mesure",
+    "heading": "Un itinéraire qui",
+    "headingAccent": "n’existe pas encore.",
+    "intro": "Envies, tempo, budget : dites-nous tout. Nous dessinons un voyage unique, du premier café au vol du retour.",
+    "cta": "Commencer mon projet",
+    "note": "Trois réponses, et on décolle !",
+    "steps": [
+      {
+        "title": "Échange",
+        "description": "Vos envies, vos inspirations, votre rythme."
+      },
+      {
+        "title": "Recherche",
+        "description": "Les meilleures options, comparées pour vous."
+      },
+      {
+        "title": "Proposition",
+        "description": "Un itinéraire dessiné sur mesure."
+      },
+      {
+        "title": "Réservation",
+        "description": "Chaque détail coordonné et confirmé."
+      },
+      {
+        "title": "Départ",
+        "description": "Vous partez l’esprit libre, nous restons joignables."
+      }
+    ]
+  },
+  "spiritualPromo": {
+    "number": "03",
+    "label": "Hajj & Omra",
+    "heading": "Un voyage sacré,",
+    "headingAccent": "préparé avec soin.",
+    "intro": "Formalités, vols, hébergements, rites : chaque étape est anticipée pour vous laisser vivre l’essentiel.",
+    "image": "/images/hajj-mosque-dusk.jpg",
+    "cta": "Découvrir l’accompagnement"
+  },
+  "approach": {
+    "number": "04",
+    "label": "La maison",
+    "heading": "Vous profitez.",
+    "headingAccent": "Nous orchestrons.",
+    "intro": "Une approche humaine et indépendante pour voyager sans passer vos soirées à comparer, réserver et tout vérifier. Chaque adresse, chaque transfert, chaque expérience est choisie pour former un voyage cohérent.",
+    "points": [
+      "Une interlocutrice unique, du premier échange au retour",
+      "Un itinéraire construit pour vous, jamais recopié",
+      "Une assistance avant, pendant et après le voyage"
+    ],
+    "image": "/images/dest-senegal.jpg",
+    "imageAlt": "Pirogues colorées sur une plage du Sénégal",
+    "caption": "La Teranga, Sénégal ♡"
+  },
+  "proof": {
+    "number": "05",
+    "label": "Pourquoi S Escapes",
+    "heading": "Bien voyager, c’est",
+    "headingAccent": "se sentir accompagné.",
+    "items": [
+      {
+        "title": "Une interlocutrice dédiée",
+        "copy": "Un échange qui reste humain, du premier message au retour."
+      },
+      {
+        "title": "Un itinéraire pensé pour vous",
+        "copy": "Des choix reliés entre eux, plutôt qu’une succession de réservations."
+      },
+      {
+        "title": "À vos côtés, avant, pendant et après",
+        "copy": "Une présence pour anticiper, ajuster et vous laisser profiter."
+      }
+    ]
+  },
+  "storiesIntro": {
+    "number": "06",
+    "label": "Carnets récents",
+    "heading": "Des histoires à garder",
+    "headingAccent": "près de vous.",
+    "intro": "Quelques fragments de destinations, d’adresses et de moments bien choisis."
+  },
+  "advisor": {
+    "label": "Un mot de votre conseillère",
+    "name": "S Escapes",
+    "role": "Une adresse, une idée, une conversation.",
+    "quote": "Un beau voyage ne se résume pas à une réservation. Il commence par écouter ce qui compte vraiment pour vous."
+  },
+  "testimonial": {
+    "published": true,
+    "quote": "Tout était fluide, sans jamais perdre ce qui rend un voyage personnel.",
+    "author": "Lina & Mehdi",
+    "trip": "Voyage sur mesure"
+  },
+  "contact": {
+    "number": "07",
+    "label": "Contact",
+    "heading": "La prochaine histoire",
+    "headingAccent": "commence ici.",
+    "intro": "Racontez-nous ce que vous avez en tête. Nous revenons vers vous pour transformer l’idée en itinéraire.",
+    "note": "Partout dans le monde, depuis chez vous ♡",
+    "submitLabel": "Envoyer ma demande",
+    "successTitle": "Merci pour votre confiance.",
+    "successCopy": "Votre projet est arrivé auprès de notre équipe."
+  }
+}

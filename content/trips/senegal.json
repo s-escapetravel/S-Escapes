@@ -1,0 +1,81 @@
+{
+  "title": "Sénégal",
+  "destination": "14.72° N · 17.47° O",
+  "location": "14.72° N · 17.47° O",
+  "price": "À partir de 990 €",
+  "duration": "Teranga & partage",
+  "coverImage": "/images/dest-senegal.jpg",
+  "description": "Dakar, l’île de Gorée, le lac Rose et la Petite Côte dans un voyage chaleureux tourné vers les rencontres et le partage.",
+  "highlights": [
+    "Vol aller-retour",
+    "Hébergements",
+    "Transferts privés",
+    "Expériences"
+  ],
+  "slug": "senegal",
+  "status": "published",
+  "featured": true,
+  "order": 7,
+  "category": "culture",
+  "note": "La Teranga ♡",
+  "subtitle": "Une terre de culture et de rencontres",
+  "secondaryImage": "/images/supporting-senegal.png",
+  "idealPeriod": "Novembre à mai",
+  "style": "Rencontres & culture",
+  "prepare": [
+    "Passeport valide",
+    "Conseils de santé voyage",
+    "Bagage souple"
+  ],
+  "itinerary": [
+    {
+      "title": "Dakar",
+      "copy": "Accueil et immersion dans la capitale."
+    },
+    {
+      "title": "Île de Gorée",
+      "copy": "Mémoire, patrimoine et traversée maritime."
+    },
+    {
+      "title": "Lac Rose",
+      "copy": "Paysages singuliers et savoir-faire locaux."
+    },
+    {
+      "title": "Petite Côte",
+      "copy": "Villages, marchés et moments de partage."
+    },
+    {
+      "title": "Au revoir Sénégal",
+      "copy": "Dernière matinée et transfert retour."
+    }
+  ],
+  "body": {
+    "type": "root",
+    "children": [
+      {
+        "type": "p",
+        "children": [
+          {
+            "type": "text",
+            "text": "Dakar, l’île de Gorée, le lac Rose et la Petite Côte dans un voyage chaleureux tourné vers les rencontres et le partage."
+          }
+        ]
+      }
+    ]
+  },
+  "seo": {
+    "title": "Voyage au Sénégal — S Escapes",
+    "description": "Dakar, Gorée, le lac Rose et la Petite Côte dans un voyage tourné vers les rencontres et le partage.",
+    "image": "/images/dest-senegal.jpg",
+    "noIndex": false
+  },
+  "name": "Sénégal",
+  "image": "/images/dest-senegal.jpg",
+  "copy": "Dakar, l’île de Gorée, le lac Rose et la Petite Côte dans un voyage chaleureux tourné vers les rencontres et le partage.",
+  "includes": [
+    "Vol aller-retour",
+    "Hébergements",
+    "Transferts privés",
+    "Expériences"
+  ]
+}

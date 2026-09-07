@@ -271,15 +271,6 @@ body.is-ready .cover-polaroids .polaroid:nth-child(2) { animation: settleIn 1s .
 .testimonial blockquote { margin: 1.1rem 0 1.6rem; font: 400 clamp(1.45rem, 2.2vw, 2rem)/1.25 var(--display); letter-spacing: -.02em; }
 .testimonial p { margin: 0; font: 500 .72rem/1.4 var(--body); letter-spacing: .16em; text-transform: uppercase; color: var(--ivory); }
 .testimonial small { display: block; margin-top: .45rem; color: var(--ivory-faint); font: 400 .66rem/1.4 var(--body); letter-spacing: .12em; }
-.testimonial-photo { width: 94px; aspect-ratio: 1; margin: 0 0 1.25rem; overflow: hidden; border-radius: 2px; border: 1px solid var(--line-strong); }
-.testimonial-photo img { height: 100%; object-fit: cover; }
-.review-invite { grid-column: 2; padding-top: 2rem; border-top: 1px solid var(--line); }
-.review-invite .sect-label { margin-bottom: .85rem; }
-.review-invite h3 { max-width: 21rem; margin-bottom: .75rem; font-size: clamp(1.5rem, 2.15vw, 2.05rem); }
-.review-invite p:not(.sect-label) { max-width: 29rem; margin: 0; color: var(--ivory-dim); font: 300 .95rem/1.65 var(--body); }
-.review-invite__cta { margin-top: 1.4rem; padding: 0; border: 0; background: transparent; cursor: pointer; }
-.review-invite__cta svg { width: 1.05rem; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; transition: transform .3s var(--ease); }
-.review-invite__cta:hover svg, .review-invite__cta:focus-visible svg { transform: translateX(.3rem); }
 
 /* ---------- contact — an airmail postcard ---------- */
 .contact { position: relative; max-width: var(--max); margin: 0 auto clamp(4rem, 7vw, 7rem); padding: clamp(3.5rem, 6vw, 6rem) var(--gutter); display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(3rem, 7vw, 8rem); background: var(--night-panel); border-radius: 6px; border: 7px solid; border-image: repeating-linear-gradient(-45deg, #2b6242 0 14px, #fdf9ef 14px 26px, #c9962e 26px 40px, #fdf9ef 40px 52px) 7; box-shadow: 0 24px 60px rgba(33, 55, 42, .14); }
@@ -394,49 +385,6 @@ input[type="checkbox"], input[type="radio"] { accent-color: var(--dawn); }
 .planner-modal.is-carnet-ready .planner-side::before { content: "Carnet prêt"; position: relative; z-index: 2; display: inline-block; margin-bottom: 1.4rem; color: #f0d896; font: italic 400 1.2rem/1 var(--accent); }
 .planner-side-note { max-width: 330px; margin: 2rem 0 0; color: rgba(245, 238, 221, .7); font: 300 .9rem/1.65 var(--body); }
 
-/* ---------- review — a post-travel note ---------- */
-.review-modal { width: min(1050px, calc(100vw - 1.5rem)); border: 0; border-radius: 12px; background: #fcf8f0; color: #21372a; overflow-y: auto; }
-.review-modal::backdrop { background: rgba(20, 32, 24, .68); backdrop-filter: blur(6px); }
-.review-modal .modal-close { border-color: rgba(245, 238, 221, .35); color: #f5eedd; }
-.review-layout { display: grid; grid-template-columns: minmax(290px, .82fr) minmax(0, 1.18fr); min-height: min(720px, calc(100dvh - 2rem)); }
-.review-intro { padding: clamp(3rem, 5vw, 5rem) clamp(2rem, 4vw, 4.4rem); background: radial-gradient(circle at 28% 8%, rgba(69, 134, 108, .38), transparent 36%), #163c31; color: #f5eedd; }
-.review-intro .sect-label { color: #f0d896; }
-.review-intro h2 { margin: 1.2rem 0 1.45rem; font-size: clamp(2.5rem, 4vw, 4.4rem); }
-.review-intro > p:not(.sect-label) { max-width: 25rem; margin: 0; color: rgba(245, 238, 221, .74); font: 300 1rem/1.7 var(--body); }
-.review-intro ul { display: grid; gap: .9rem; margin: 2.4rem 0 0; padding: 1.45rem 0 0; list-style: none; border-top: 1px solid rgba(245, 238, 221, .2); }
-.review-intro li { position: relative; padding-left: 1.3rem; color: rgba(245, 238, 221, .83); font: 400 .85rem/1.45 var(--body); }
-.review-intro li::before { content: "✦"; position: absolute; left: 0; color: #f0d896; }
-.review-form { padding: clamp(2.7rem, 5vw, 4.5rem); display: grid; gap: 1.25rem; align-content: start; }
-.review-form .form-kicker { margin: 0 0 .35rem; color: rgba(33, 55, 42, .6); font: 500 .68rem/1 var(--body); letter-spacing: .19em; text-transform: uppercase; }
-.review-form label { color: rgba(33, 55, 42, .72); }
-.review-form label > small, .review-upload > small { color: rgba(33, 55, 42, .58); font: 400 .68rem/1.4 var(--body); letter-spacing: 0; text-transform: none; }
-.review-form input, .review-form select, .review-form textarea { border-bottom-color: rgba(33, 55, 42, .28); color: #21372a; caret-color: #c9962e; }
-.review-form input:focus, .review-form select:focus, .review-form textarea:focus { border-bottom-color: #c9962e; box-shadow: 0 1px 0 #c9962e; }
-.review-form select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2321372a' stroke-width='1.5'/%3E%3C/svg%3E"); }
-.rating-fieldset { margin: .25rem 0 0; padding: 0; border: 0; }
-.rating-fieldset legend { margin-bottom: .7rem; color: rgba(33, 55, 42, .72); font: 500 .66rem/1.5 var(--body); letter-spacing: .24em; text-transform: uppercase; }
-.rating-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; }
-.rating-options label { position: relative; display: block; min-height: 77px; padding: 0 !important; border: 1px solid rgba(33, 55, 42, .18); border-radius: 2px; cursor: pointer; overflow: hidden; }
-.rating-options input { position: absolute; opacity: 0; }
-.rating-options span { display: grid; height: 100%; place-content: center; color: #21372a; font: 400 1.65rem/1 var(--display); text-align: center; }
-.rating-options small { margin-top: .35rem; color: rgba(33, 55, 42, .58); font: 400 .62rem/1 var(--body); letter-spacing: .04em; text-transform: none; }
-.rating-options label:has(input:checked), .rating-options label:hover { border-color: #c9962e; background: rgba(201, 150, 46, .09); }
-.review-upload { gap: .35rem !important; padding: 1rem 1.1rem; border: 1px dashed rgba(33, 55, 42, .35); border-radius: 2px; cursor: pointer; transition: border-color .25s, background .25s; }
-.review-upload:hover, .review-upload:focus-within { border-color: #c9962e; background: rgba(201, 150, 46, .07); }
-.review-upload input[type="file"] { padding: 0; border: 0; font-size: .82rem; }
-.review-previews { display: grid; grid-template-columns: repeat(3, 1fr); gap: .55rem; min-height: 0; }
-.review-preview { position: relative; aspect-ratio: 1.25; overflow: hidden; border-radius: 2px; background: #e7e0d1; }
-.review-preview img { height: 100%; object-fit: cover; }
-.review-preview button { position: absolute; top: .35rem; right: .35rem; width: 26px; height: 26px; border: 0; border-radius: 50%; background: rgba(22, 60, 49, .88); color: #fff; cursor: pointer; }
-.review-form .consent { color: rgba(33, 55, 42, .72); font-size: .82rem; }
-.review-form .consent a { color: #326d57; }
-.review-form .pill { justify-self: start; margin-top: .25rem; }
-.review-form .form-status { color: #326d57; }
-.form-success--review { padding: clamp(3rem, 6vw, 5rem); align-self: stretch; border: 0; border-radius: 0; background: #fcf8f0; color: #21372a; }
-.form-success--review h2 { max-width: 28rem; margin: 1.2rem 0; font-size: clamp(2.7rem, 4.5vw, 4.8rem); }
-.form-success--review p:not(.sect-label) { max-width: 26rem; color: rgba(33, 55, 42, .7); }
-.form-success--review .pill { margin-top: 1rem; }
-
 /* ---------- legal placeholder ---------- */
 .legal-page { max-width: 940px; min-height: 100vh; margin: 0 auto; padding: clamp(9rem, 15vw, 12rem) var(--gutter) clamp(5rem, 9vw, 8rem); }
 .legal-page h1 { max-width: 760px; margin-bottom: 3.5rem; font-size: clamp(3.2rem, 8vw, 7rem); }
@@ -465,7 +413,6 @@ input[type="checkbox"], input[type="radio"] { accent-color: var(--dawn); }
   .cover-polaroids { display: none; }
   .atelier, .maison { grid-template-columns: 1fr; }
   .proof, .advisor { grid-template-columns: 1fr; }
-  .review-invite { grid-column: auto; max-width: 36rem; }
   .proof-intro { position: static; }
   .maison-photo { justify-self: start; }
   .sacred { grid-template-columns: 1fr; }
@@ -533,14 +480,6 @@ input[type="checkbox"], input[type="radio"] { accent-color: var(--dawn); }
   .planner-pace label { min-height: 45px; justify-items: start; padding: .75rem 1rem; }
   .planner-modal .planner-nav { margin-top: 1.5rem; }
   .planner-modal .planner-nav .pill { width: 100%; }
-  .review-modal { width: min(100vw - 1rem, 620px); max-height: calc(100svh - 1rem); }
-  .review-layout { grid-template-columns: 1fr; min-height: 0; }
-  .review-intro { padding: 2.3rem 1.35rem 2rem; }
-  .review-intro h2 { margin: .7rem 0 1rem; font-size: clamp(2.35rem, 11vw, 3.6rem); }
-  .review-intro ul { display: none; }
-  .review-form, .form-success--review { padding: 2rem 1.35rem; }
-  .rating-options { gap: .4rem; }
-  .rating-options label { min-height: 69px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

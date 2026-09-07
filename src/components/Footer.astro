@@ -1,0 +1,29 @@
+---
+import { siteSettings } from '../lib/content'
+
+interface Props {
+  variant?: 'travel' | 'sacred' | 'destination'
+}
+
+const { variant = 'travel' } = Astro.props
+const sacred = variant === 'sacred'
+---
+
+<footer class="deck">
+  <p class="deck-mark" aria-hidden="true">{sacred ? 'Hajj & Omra' : 'S Escapes'}</p>
+  <div class="deck-grid">
+    <p>{sacred ? <>Préparé avec soin.<br />Vécu avec sérénité.</> : siteSettings.footer.statement}</p>
+    <nav aria-label="Liens de pied de page">
+      <a href={sacred ? '#chemin' : '/#departs'}>{sacred ? 'Le chemin' : 'Départs'}</a>
+      <a href={sacred ? '#formules' : '/#atelier'}>{sacred ? 'Formules' : 'Sur mesure'}</a>
+      <a href={sacred ? '/' : '/hajj-omra'}>{sacred ? 'Tous les voyages' : 'Hajj & Omra'}</a>
+      <a href="/confidentialite">Confidentialité</a>
+    </nav>
+    <div>
+      <a href={`tel:${siteSettings.contact.phoneHref}`}>{siteSettings.contact.phoneDisplay}</a>
+      <a href={`mailto:${siteSettings.contact.email}`}>E-mail</a>
+      {siteSettings.social.instagramUrl && <a href={siteSettings.social.instagramUrl} target="_blank" rel="noreferrer">Instagram</a>}
+    </div>
+  </div>
+  <small>© <span data-year></span> {sacred ? 'S Escapes — Hajj & Omra.' : siteSettings.footer.copyright}</small>
+</footer>

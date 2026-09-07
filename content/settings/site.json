@@ -1,0 +1,41 @@
+{
+  "brandName": "S Escapes",
+  "descriptor": "Travel Planner",
+  "siteUrl": "https://s-escapes.com",
+  "contact": {
+    "phoneDisplay": "06 34 69 32 43",
+    "phoneHref": "+33634693243",
+    "email": "escapes.travelplanner@gmail.com",
+    "hours": "Du lundi au vendredi, 9 h – 18 h",
+    "responseTime": "Réponse sous 24 h ouvrées",
+    "locationNote": "Partout dans le monde, depuis chez vous ♡"
+  },
+  "social": {
+    "instagramUrl": "https://www.instagram.com/bys_escapes/",
+    "instagramLabel": "@bys_escapes",
+    "whatsappUrl": ""
+  },
+  "navigation": [
+    { "label": "Nos voyages", "href": "/#departs", "highlight": false },
+    { "label": "Comment ça marche", "href": "/#atelier", "highlight": false },
+    { "label": "Hajj & Omra", "href": "/hajj-omra", "highlight": false },
+    { "label": "Notre approche", "href": "/#maison", "highlight": false },
+    { "label": "Écrivez-nous", "href": "/#contact", "highlight": true }
+  ],
+  "footer": {
+    "statement": "Voyages prêts à partir, sur mesure, Hajj & Omra.",
+    "copyright": "S Escapes — Travel planner indépendant. Tous droits réservés."
+  },
+  "organization": {
+    "legalName": "S Escapes",
+    "registration": "À compléter",
+    "address": "À compléter",
+    "privacyEmail": "escapes.travelplanner@gmail.com"
+  },
+  "defaultSeo": {
+    "title": "S Escapes — Travel Planner",
+    "description": "S Escapes imagine vos voyages sur mesure et propose des séjours prêts à partir, de la Méditerranée à la Laponie.",
+    "image": "/images/hero-travel.jpg",
+    "noIndex": false
+  }
+}

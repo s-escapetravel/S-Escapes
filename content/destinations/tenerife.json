@@ -1,0 +1,29 @@
+{
+  "name": "Tenerife",
+  "slug": "tenerife",
+  "status": "published",
+  "featured": true,
+  "order": 4,
+  "category": "soleil",
+  "note": "L’été toute l’année ☀",
+  "coords": "28.29° N · 16.63° O",
+  "price": "À partir de 599 €",
+  "duration": "Îles Canaries",
+  "subtitle": "Le grand air au rythme de l’Atlantique",
+  "copy": "Plages, paysages volcaniques et villages insulaires réunis dans une échappée lumineuse, personnalisable selon vos envies.",
+  "image": "/images/dest-canaries.jpg",
+  "secondaryImage": "/images/supporting-tenerife.png",
+  "idealPeriod": "Toute l’année",
+  "style": "Soleil & grands espaces",
+  "includes": ["Vol aller-retour", "Hébergement", "Transferts", "Activités sur mesure"],
+  "prepare": ["Protection solaire", "Chaussures de marche", "Option bagage en soute"],
+  "itinerary": [
+    { "title": "Cap sur Tenerife", "copy": "Arrivée, transfert et installation." },
+    { "title": "Terres volcaniques", "copy": "Exploration du Teide et de ses paysages." },
+    { "title": "Océan Atlantique", "copy": "Journée en mer ou détente sur la côte." },
+    { "title": "L’île autrement", "copy": "Villages, gastronomie et expériences au choix." },
+    { "title": "Derniers rayons", "copy": "Matinée libre avant le retour." }
+  ],
+  "alternatives": [{ "destination": "content/destinations/algarve.json" }, { "destination": "content/destinations/grece.json" }],
+  "seo": { "title": "Voyage à Tenerife — S Escapes", "description": "Plages, paysages volcaniques et villages insulaires : découvrez Tenerife avec S Escapes.", "image": "/images/dest-canaries.jpg", "noIndex": false }
+}

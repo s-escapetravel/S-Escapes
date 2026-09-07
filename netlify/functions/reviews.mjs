@@ -2,7 +2,7 @@ import { RequestError, assertOrigin, emailIsValid, escapeHtml, getRepositoryJson
 
 const MAX_PHOTO_BYTES = 3 * 1024 * 1024
 const ownerEmail = () => process.env.LEAD_RECIPIENT || 'sescapes.travelplanner@gmail.com'
-const siteUrl = () => (process.env.SITE_URL || 'https://s-escapes.fr').replace(/\/$/, '')
+const siteUrl = () => (process.env.SITE_URL || 'https://s-escapes.com').replace(/\/$/, '')
 
 const imageType = (type, buffer) => {
   const signatures = {

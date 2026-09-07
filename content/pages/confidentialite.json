@@ -1,0 +1,30 @@
+{
+  "pageName": "Politique de confidentialité",
+  "seo": {
+    "title": "Confidentialité — S Escapes",
+    "description": "Comment S Escapes recueille, utilise et protège les informations liées à votre projet de voyage.",
+    "image": "/images/hero-travel.jpg",
+    "noIndex": false
+  },
+  "heading": "Votre projet mérite",
+  "headingAccent": "de rester personnel.",
+  "updatedAt": "Juillet 2026",
+  "sections": [
+    {
+      "title": "Les informations recueillies",
+      "body": "Lorsque vous remplissez un formulaire, S Escapes recueille uniquement les informations nécessaires pour comprendre votre projet, vous recontacter et préparer une proposition adaptée : identité, coordonnées, préférences de voyage, dates, budget et composition du groupe."
+    },
+    {
+      "title": "Pourquoi nous les utilisons",
+      "body": "Ces informations servent à répondre à votre demande, organiser nos échanges et assurer le suivi de votre projet. Elles ne sont ni revendues ni utilisées pour un autre objectif sans votre accord."
+    },
+    {
+      "title": "Conservation et destinataires",
+      "body": "Les données sont accessibles uniquement aux personnes qui préparent et suivent votre demande, ainsi qu’aux prestataires techniques strictement nécessaires. La durée de conservation doit être adaptée à la relation commerciale et aux obligations légales de S Escapes."
+    },
+    {
+      "title": "Vos droits",
+      "body": "Vous pouvez demander l’accès, la rectification, l’effacement ou la limitation de vos données, et retirer votre consentement à tout moment en écrivant à l’adresse de contact confidentialité indiquée sur ce site."
+    }
+  ]
+}
