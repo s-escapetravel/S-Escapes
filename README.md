@@ -37,7 +37,7 @@ window.S_ESCAPES_LEAD_CONFIG = {
   reviewEndpoint: '/.netlify/functions/reviews',
   method: 'POST',
   headers: {},
-  internalEmail: 'escapes.travelplanner@gmail.com',
+  internalEmail: 'sescapes.travelplanner@gmail.com',
   responseTime: 'Réponse sous 24 h ouvrées'
 }
 ```
@@ -45,8 +45,8 @@ window.S_ESCAPES_LEAD_CONFIG = {
 Set these Netlify environment variables before the first production deploy:
 
 - `RESEND_API_KEY`: server-side Resend API key.
-- `RESEND_FROM_EMAIL`: a verified sender, for example `S Escapes <bonjour@your-domain.fr>`.
-- `LEAD_RECIPIENT`: the agency inbox; defaults to `escapes.travelplanner@gmail.com` if omitted.
+- `RESEND_FROM_EMAIL`: a verified sender, for example `S-Escapes <contact@s-escapes.com>`.
+- `LEAD_RECIPIENT`: the agency inbox; defaults to `sescapes.travelplanner@gmail.com` if omitted.
 - `SITE_URL`: the canonical production URL, used by the moderation e-mail.
 - `GITHUB_CONTENTS_TOKEN`: fine-grained GitHub token with Contents read/write permission for this repository.
 - `GITHUB_REPOSITORY`: `owner/repository` for this site.

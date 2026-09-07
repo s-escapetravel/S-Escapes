@@ -3,7 +3,7 @@ const defaultConfig = {
   endpoint: '',
   method: 'POST',
   headers: {},
-  internalEmail: 'escapes.travelplanner@gmail.com',
+  internalEmail: 'sescapes.travelplanner@gmail.com',
   responseTime: ''
 }
 

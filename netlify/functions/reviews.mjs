@@ -1,7 +1,7 @@
 import { RequestError, assertOrigin, emailIsValid, escapeHtml, getRepositoryJson, json, listRepositoryFiles, paragraph, parseJson, putRepositoryFile, reviewId, sendResend, text } from './lib/shared.mjs'
 
 const MAX_PHOTO_BYTES = 3 * 1024 * 1024
-const ownerEmail = () => process.env.LEAD_RECIPIENT || 'escapes.travelplanner@gmail.com'
+const ownerEmail = () => process.env.LEAD_RECIPIENT || 'sescapes.travelplanner@gmail.com'
 const siteUrl = () => (process.env.SITE_URL || 'https://s-escapes.fr').replace(/\/$/, '')
 
 const imageType = (type, buffer) => {
@@ -38,6 +38,7 @@ const reviewInput = payload => {
 const reviewNotification = review => ({
   subject: `Avis à modérer — ${review.trip} — ${review.name}`,
   replyTo: review.email,
+  reply_to: review.email,
   textBody: `${review.name} a laissé un avis (${review.rating}/5) pour ${review.trip}.\n\n${review.message}\n\nModérer : ${siteUrl()}/admin/`,
   html: `<!doctype html><html><body style="margin:0;background:#f5f1e8;font-family:Arial,sans-serif;color:#21372a"><main style="max-width:680px;margin:24px auto;background:#fff;padding:32px"><p style="margin:0 0 12px;color:#a97920;font-size:12px;letter-spacing:1.6px;text-transform:uppercase">Avis à modérer</p><h1 style="margin:0 0 12px;font-size:28px">${escapeHtml(review.trip)}</h1><p style="margin:0 0 20px;color:#5b675e">${escapeHtml(review.name)} · ${escapeHtml(review.rating)}/5</p><blockquote style="margin:0;padding:18px 20px;border-left:3px solid #c9962e;background:#f8f5ed;font-size:17px;line-height:1.6">${paragraph(review.message)}</blockquote><p style="margin:28px 0 0"><a href="${siteUrl()}/admin/" style="display:inline-block;padding:12px 18px;background:#163c31;color:#fff;text-decoration:none">Relire et décider dans Tina</a></p></main></body></html>`
 })

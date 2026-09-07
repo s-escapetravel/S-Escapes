@@ -41,14 +41,23 @@ export const parseJson = async request => {
   }
 }
 
-export const sendResend = async ({ to, replyTo, subject, textBody, html }) => {
+export const sendResend = async ({ to, replyTo, reply_to, subject, textBody, html }) => {
   const apiKey = process.env.RESEND_API_KEY
-  const from = process.env.RESEND_FROM_EMAIL
-  if (!apiKey || !from) throw new RequestError(503, 'La messagerie est en cours de configuration.')
+  const from = process.env.RESEND_FROM_EMAIL || 'S-Escapes <contact@s-escapes.com>'
+  if (!apiKey) throw new RequestError(503, 'La messagerie est en cours de configuration : clé RESEND_API_KEY manquante.')
+  if (!from) throw new RequestError(503, 'La messagerie est en cours de configuration : adresse d’expédition RESEND_FROM_EMAIL manquante.')
+  const replyAddress = reply_to || replyTo || undefined
   const response = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ from, to, reply_to: replyTo || undefined, subject, text: textBody, html })
+    body: JSON.stringify({
+      from,
+      to,
+      ...(replyAddress ? { reply_to: replyAddress } : {}),
+      subject,
+      text: textBody,
+      html
+    })
   })
   if (!response.ok) {
     console.error('Resend delivery failed', response.status, await response.text())

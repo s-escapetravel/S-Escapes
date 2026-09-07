@@ -10,6 +10,6 @@ window.S_ESCAPES_LEAD_CONFIG = {
   reviewEndpoint: '/.netlify/functions/reviews',
   method: 'POST',
   headers: {},
-  internalEmail: 'escapes.travelplanner@gmail.com',
+  internalEmail: 'sescapes.travelplanner@gmail.com',
   responseTime: 'Réponse sous 24 h ouvrées'
 }
