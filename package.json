@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tinacms dev -c \"astro dev\"",
     "dev:site": "astro dev",
-    "build": "tinacms build --local --skip-cloud-checks -c \"astro build\"",
+    "build": "node scripts/build.mjs",
     "build:site": "astro build",
     "build:cms": "tinacms build --local --skip-cloud-checks",
     "build:cloud": "tinacms build -c \"astro build\"",

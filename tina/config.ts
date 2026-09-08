@@ -18,9 +18,19 @@ const sectionHeadingFields = [
 ] as const
 
 export default defineConfig({
-  branch: process.env.TINA_BRANCH || process.env.GITHUB_BRANCH || 'main',
-  clientId: process.env.TINA_PUBLIC_CLIENT_ID || 'local',
-  token: process.env.TINA_TOKEN || 'local',
+  branch:
+    process.env.NEXT_PUBLIC_TINA_BRANCH ||
+    process.env.TINA_BRANCH ||
+    process.env.GITHUB_BRANCH ||
+    process.env.HEAD ||
+    'main',
+  clientId:
+    process.env.NEXT_PUBLIC_TINA_CLIENT_ID ||
+    process.env.TINA_PUBLIC_CLIENT_ID ||
+    process.env.TINA_CLIENT_ID ||
+    null,
+  token: process.env.TINA_TOKEN || null,
+
   build: {
     outputFolder: 'admin',
     publicFolder: 'public'
